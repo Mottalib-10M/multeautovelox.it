@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://it-multe-autovelox.example";
+export const SITE_URL = "https://multeautovelox.it";
 export const SITE_NAMES: Record<string, string> = {"it": "Multe e Autovelox", "en": "Multe e Autovelox"};
 export const LANG_TAGS: Record<string, string> = {"it": "it-IT", "en": "en-IT"};
 export const OG_LOCALES: Record<string, string> = {"it": "it_IT", "en": "en_GB"};
@@ -18,7 +18,7 @@ export const AUTHOR_DESC: Record<string, string> = {"it": "Radif Partners toglie
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"it": ["Limiti di velocità e sanzioni dell'art. 142 del Codice della Strada", "Riduzione del 5% sulla velocità rilevata (art. 345 del Regolamento)", "Patente a punti e tabella dell'art. 126-bis", "Pagamento ridotto del 30% e verbale non pagato", "Ricorso al prefetto e al giudice di pace", "Registro nazionale degli autovelox per comune"], "en": ["Italian speed limits and article 142 penalties", "The 5% reduction applied to Italian speed readings", "The Italian points licence and its penalty table", "The 30% early-payment discount on Italian fines", "Appealing an Italian fine to the prefetto or the giudice di pace", "Italy's national register of speed cameras by comune"]};
-export const CONTACT_EMAIL = "contatti@it-multe-autovelox.example";
+export const CONTACT_EMAIL = "contatti@multeautovelox.it";
 export const THEME_COLOR = '#0B6E3A';
 export const LOGO_SYMBOL = 'km/h';
 export const BING_VERIFY_CODE = '';
