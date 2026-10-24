@@ -1,3 +1,4 @@
+import { DATA_REGISTRO } from '../../lib/data-registro';
 import { defineGuide, type Helpers } from '../../lib/guide-types';
 import { perModello, topComuni, strade, CAT_IT, CAT_EN } from '../lib/velox';
 
@@ -20,8 +21,8 @@ export default defineGuide({
     slug: 'autovelox-milano',
     nav: 'Autovelox a Milano',
     card: 'I 22 apparecchi del Comune di Milano e i sistemi di velocità media della Città metropolitana, strada per strada.',
-    title: 'Autovelox Milano: Comune e provincia, registro al 22/02/2026',
-    description: 'Autovelox a Milano: i 22 apparecchi dichiarati dalla Polizia Locale nel registro al 22/02/2026 (copia archiviata), modelli, decreti e strade provinciali.',
+    title: `Autovelox Milano: Comune e provincia, registro al ${DATA_REGISTRO}`,
+    description: `Autovelox a Milano: i 22 apparecchi dichiarati dalla Polizia Locale nel registro al ${DATA_REGISTRO} (copia archiviata), modelli, decreti e strade provinciali.`,
     h1: 'Autovelox a Milano: cosa dichiarano il Comune e la Città metropolitana',
     intro: 'Il calcolatore parte da Milano: apri l’elenco per vedere ogni apparecchio, con modello e decreto. Sotto, le strade provinciali con i sistemi di velocità media.',
     resume: (h) => `Nel registro nazionale del Ministero delle infrastrutture e dei trasporti, copia del ${h.date(h.reg)}, la Polizia Locale del Comune di Milano dichiara ${h.num(C(h).totale)} apparecchi per il controllo della velocità: ${Object.entries(C(h).categorie).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${h.num(v)} ${CAT_IT[k]}`).join(', ')}. Di questi, ${h.num(C(h).nonAttivi)} sono segnalati dal Comune come non attivati. I modelli più numerosi sono ${M()[0].modello} (${h.num(M()[0].n)}, decreto n. ${M()[0].decreto}) e ${M()[1].modello} (${h.num(M()[1].n)}, decreto n. ${M()[1].decreto}). Il Comune non indica nel registro le strade delle postazioni. Lo fa invece la Polizia metropolitana della Città metropolitana di Milano, che dichiara ${h.num(C(h).provinciali)} sistemi di velocità media sulle strade provinciali, come la Rivoltana, la Paullese e la Cassanese, con chilometro e direzione. In tutta la provincia gli apparecchi dichiarati sono ${h.num(PR(h).totale)}, in ${h.num(PR(h).comuni)} comuni. Alla velocità misurata si toglie il ${h.pct(h.P.tolerance.percent, 0)}, minimo ${h.num(h.P.tolerance.min_kmh)} km/h.`,
@@ -49,8 +50,8 @@ ${h.table(['Comune', 'Apparecchi dichiarati'], topComuni('MI', 'F205', 8).map((c
     slug: 'milan-speed-cameras',
     nav: 'Speed cameras in Milan',
     card: 'The 22 devices declared by the City of Milan and the metropolitan area’s average-speed systems, road by road.',
-    title: 'Milan speed cameras: city and provincial devices, 22/02/2026',
-    description: 'Milan speed cameras: the 22 devices declared by the city’s local police in the register of 22/02/2026 (archived copy), models, decrees and provincial roads.',
+    title: `Milan speed cameras: city and provincial devices, ${DATA_REGISTRO}`,
+    description: `Milan speed cameras: the 22 devices declared by the city’s local police in the register of ${DATA_REGISTRO} (archived copy), models, decrees and provincial roads.`,
     h1: 'Speed cameras in Milan: what the city and the metropolitan area declare',
     intro: 'The tool opens on Milan: show the list to see each device with its model and decree. Below, the provincial roads covered by average-speed systems.',
     resume: (h) => `In the national register of the Italian Ministry of Infrastructure and Transport, copy of ${h.date(h.reg)}, the Polizia Locale (local police) of the City of Milan declares ${h.num(C(h).totale)} speed-measuring devices: ${Object.entries(C(h).categorie).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${h.num(v)} ${CAT_EN[k]}`).join(', ')}. Of these, ${h.num(C(h).nonAttivi)} are flagged by the city as never switched on. The most common models are the ${M()[0].modello} (${h.num(M()[0].n)}, decree ${M()[0].decreto}) and the ${M()[1].modello} (${h.num(M()[1].n)}, decree ${M()[1].decreto}). The city gives no street names in the register. The metropolitan police of the Città metropolitana di Milano do: they declare ${h.num(C(h).provinciali)} average-speed systems on provincial roads such as the Rivoltana, the Paullese and the Cassanese, with kilometre and direction. Across the whole province ${h.num(PR(h).totale)} devices are declared, in ${h.num(PR(h).comuni)} comuni. The recorded speed is always cut by ${h.pct(h.P.tolerance.percent, 0)}, at least ${h.num(h.P.tolerance.min_kmh)} km/h.`,

@@ -1,3 +1,4 @@
+import { DATA_REGISTRO } from '../../lib/data-registro';
 import { defineGuide, type Helpers } from '../../lib/guide-types';
 
 const I = (h: Helpers) => h.S.italia;
@@ -16,7 +17,7 @@ export default defineGuide({
     nav: 'Autovelox: come funzionano',
     card: 'Fissi, mobili, tutor: cosa misura un autovelox, come va segnalato e quanti ne dichiara ogni comune.',
     title: 'Autovelox 2026: tipi, segnalazione, multe e registro MIT',
-    description: 'Autovelox fissi, mobili e tutor: come misurano, come vanno segnalati, la tolleranza e quanti ne dichiara ogni comune nel registro del MIT al 22/02/2026.',
+    description: `Autovelox fissi, mobili e tutor: come misurano, come vanno segnalati, la tolleranza e quanti ne dichiara ogni comune nel registro del MIT al ${DATA_REGISTRO}.`,
     h1: 'Autovelox: come funzionano e quali sono dichiarati nel tuo comune',
     intro: 'Cerca un comune: vedi quanti apparecchi l’ente ha dichiarato al Ministero, di che tipo, con quale decreto. Sotto, cosa misura un autovelox e cosa deve esserci prima.',
     resume: (h) => `In Italia un autovelox è qualunque apparecchio che misura la velocità di un veicolo per accertare un eccesso: una postazione fissa a bordo strada, un apparecchio mobile su cavalletto o in auto, un telelaser puntato a mano dall’agente, oppure un sistema di velocità media, il tutor, che calcola il tempo tra due portali. L’articolo 142 del Codice della Strada considera prova solo le misure di apparecchi «debitamente omologati», e il comma 6-bis impone che le postazioni siano segnalate prima e ben visibili. Alla velocità misurata si toglie sempre il ${h.pct(h.P.tolerance.percent, 0)}, con un minimo di ${h.num(h.P.tolerance.min_kmh)} km/h. Dal 28 novembre 2025 il Ministero delle infrastrutture e dei trasporti pubblica il registro degli apparecchi dichiarati dagli enti: la copia del ${h.date(h.reg)} conta ${h.num(I(h).totale)} apparecchi, di cui ${h.num(C(h).mobile)} mobili, ${h.num(C(h).fisso)} fissi e ${h.num(C(h).velocita_media)} di velocità media, dichiarati da ${h.num(I(h).comuni)} comuni, dagli organi provinciali e dalla Polizia Stradale.`,
@@ -52,7 +53,7 @@ ${h.table(['Comune', 'Provincia', 'Apparecchi dichiarati'], h.S.top_comuni.slice
     nav: 'Speed cameras in Italy',
     card: 'Fixed, mobile, tutor: what an autovelox measures, how it must be signposted and how many each comune declares.',
     title: 'Speed cameras in Italy 2026: types, signs, fines, register',
-    description: 'Speed cameras in Italy: fixed, mobile and tutor systems, how they measure, signposting, tolerance and devices each town declares in the register of 22/02/2026.',
+    description: `Speed cameras in Italy: fixed, mobile and tutor systems, how they measure, signposting, tolerance and devices each town declares in the register of ${DATA_REGISTRO}.`,
     h1: 'Speed cameras in Italy: how they work and which ones a town declares',
     intro: 'Look up a comune (town): see how many devices it declared to the transport ministry, of which type and under which decree. Below, what an autovelox measures and the rules it must meet.',
     resume: (h) => `In Italy an autovelox is any device that measures a vehicle’s speed to record an offence: a fixed roadside unit, a mobile unit on a tripod or in a car, a laser gun aimed by an officer, or an average-speed system, the tutor, which times you between two gantries. Article 142 of the Italian Highway Code only accepts as evidence the readings of “duly homologated” devices, and paragraph 6-bis requires speed checks to be signposted in advance and clearly visible. The recorded speed is always cut by ${h.pct(h.P.tolerance.percent, 0)}, with a minimum of ${h.num(h.P.tolerance.min_kmh)} km/h. Since 28 November 2025 the Ministry of Infrastructure and Transport has published a register of the devices declared by police bodies: the copy of ${h.date(h.reg)} lists ${h.num(I(h).totale)} devices, including ${h.num(C(h).mobile)} mobile, ${h.num(C(h).fisso)} fixed and ${h.num(C(h).velocita_media)} average-speed systems, declared by ${h.num(I(h).comuni)} comuni, by provincial bodies and by the Polizia Stradale (the national traffic police).`,

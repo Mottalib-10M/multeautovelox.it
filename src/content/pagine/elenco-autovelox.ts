@@ -1,3 +1,4 @@
+import { DATA_REGISTRO } from '../../lib/data-registro';
 import { defineGuide, type Helpers } from '../../lib/guide-types';
 import { cats } from '../lib/velox';
 
@@ -18,8 +19,8 @@ export default defineGuide({
     slug: 'elenco-autovelox',
     nav: 'Elenco autovelox per comune',
     card: 'Tutti i 7 896 comuni: quanti apparecchi ha dichiarato l’ente, marca, modello, decreto e note.',
-    title: 'Elenco autovelox per comune: registro MIT al 22/02/2026',
-    description: 'Elenco degli autovelox dichiarati al Ministero per ogni comune, dalla copia archiviata del registro al 22/02/2026: numero, tipo, marca, modello, decreto e note.',
+    title: `Elenco autovelox per comune: registro MIT al ${DATA_REGISTRO}`,
+    description: `Elenco degli autovelox dichiarati al Ministero per ogni comune, dalla copia archiviata del registro al ${DATA_REGISTRO}: numero, tipo, marca, modello, decreto e note.`,
     h1: 'Elenco degli autovelox: cerca il tuo comune nel registro nazionale',
     intro: 'Scrivi il nome di un comune: vedi gli apparecchi dichiarati dall’ente locale e, sotto la linea, quelli degli organi provinciali. Ogni riga riporta ciò che l’ente ha comunicato.',
     resume: (h) => `L’elenco nazionale degli autovelox è la «Lista dispositivi di rilevamento della velocità» pubblicata dal Ministero delle infrastrutture e dei trasporti dal 28 novembre 2025, in base al decreto direttoriale n. 367 del 29 settembre 2025. Ogni organo di polizia che usa un apparecchio per misurare la velocità deve dichiararlo: marca, modello, versione, matricola, numero e data del decreto di approvazione o di omologazione, e, quando serve, posizione e direzione. La copia letta da questo sito è del ${h.date(h.reg)} e conta ${h.num(I(h).totale)} apparecchi. ${h.num(I(h).comuni)} comuni ne dichiarano almeno uno; gli organi provinciali e metropolitani ne dichiarano ${h.num(I(h).provinciali)}, la Polizia Stradale ${h.num(I(h).polizia_stradale)} e altri enti senza comune ${h.num(I(h).altri_senza_comune)}. Il calcolatore permette di cercare uno qualsiasi dei ${h.num(h.S.meta.comuni_istat)} comuni italiani e di aprire la lista completa della sua provincia, con le note scritte dagli enti. Un comune assente dall’elenco non ha dichiarato apparecchi in quella data.`,
@@ -46,8 +47,8 @@ ${h.table(['Comune', 'Apparecchi del comune', 'Tipi dichiarati', 'Organi provinc
     slug: 'italy-speed-camera-list',
     nav: 'Speed camera list by town',
     card: 'All 7,896 comuni: how many devices each body declared, make, model, decree and notes.',
-    title: 'Speed camera list Italy: MIT register as of 22/02/2026',
-    description: 'Speed cameras declared to the Italian ministry for each comune, from the archived copy of the register of 22/02/2026: number, type, make, model, decree, notes.',
+    title: `Speed camera list Italy: MIT register as of ${DATA_REGISTRO}`,
+    description: `Speed cameras declared to the Italian ministry for each comune, from the archived copy of the register of ${DATA_REGISTRO}: number, type, make, model, decree, notes.`,
     h1: 'Speed camera list: look up any Italian town in the national register',
     intro: 'Type the name of a comune (town): see the devices declared by its local police and, below the line, those of the provincial bodies. Each row shows what the body reported.',
     resume: (h) => `Italy’s national speed-camera list is the “Lista dispositivi di rilevamento della velocità” published by the Ministry of Infrastructure and Transport since 28 November 2025, under directorial decree 367 of 29 September 2025. Every police body using a speed-measuring device must declare it: make, model, version, serial number, number and date of the approval or homologation decree and, where needed, location and direction. The copy read by this site dates from ${h.date(h.reg)} and lists ${h.num(I(h).totale)} devices. ${h.num(I(h).comuni)} comuni declare at least one; provincial and metropolitan bodies declare ${h.num(I(h).provinciali)}, the Polizia Stradale (national traffic police) ${h.num(I(h).polizia_stradale)} and other bodies with no comune ${h.num(I(h).altri_senza_comune)}. The tool lets you search any of Italy’s ${h.num(h.S.meta.comuni_istat)} comuni and open the full list for its province, with the notes written by each body. A town missing from the list had declared no device on that date.`,

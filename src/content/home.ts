@@ -1,3 +1,4 @@
+import { DATA_REGISTRO } from '../lib/data-registro';
 /**
  * Texte de l'accueil (page pilier) en italien et en anglais. Chiffres tirés des paramètres et du
  * registre MIT via les helpers : aucun montant écrit à la main.
@@ -11,7 +12,7 @@ const ex = (h: Helpers, rilevata: number, limite: number, o: { notte?: boolean; 
 export const HOME: Record<'it' | 'en', HomeText> = {
   it: {
     title: 'Multa autovelox 2026: importo, punti e sconto del 30 %',
-    description: 'Multa autovelox: inserisci la velocità del verbale e il limite, ottieni l’importo entro 5 e 60 giorni, i punti e la sospensione. Registro MIT al 22/02/2026.',
+    description: `Multa autovelox: inserisci la velocità del verbale e il limite, ottieni l’importo entro 5 e 60 giorni, i punti e la sospensione. Registro MIT al ${DATA_REGISTRO}.`,
     h1: 'Multa autovelox: quanto paghi e quanti punti perdi',
     intro: 'Scrivi la velocità stampata sul verbale e il limite della strada: il calcolo toglie la tolleranza, trova la fascia dell’articolo 142 e mostra subito importo, punti e scadenze.',
     resume: (h) => {
@@ -73,7 +74,7 @@ ${h.table(['Oltre il limite', 'Importo', 'Entro 5 giorni', 'Punti', 'Sospensione
   },
   en: {
     title: 'Speeding fine in Italy 2026: amount, points, 30% discount',
-    description: 'Speeding fine in Italy: enter the speed on the fine and the limit, get what you pay within 5 and 60 days, points and any suspension. MIT register, 22/02/2026.',
+    description: `Speeding fine in Italy: enter the speed on the fine and the limit, get what you pay within 5 and 60 days, points and any suspension. MIT register, ${DATA_REGISTRO}.`,
     h1: 'Italian speeding fine: what you pay and the points you lose',
     intro: 'Type the speed printed on your Italian fine (the verbale) and the road limit: the tool removes the tolerance, finds the article 142 band and shows the amount, points and deadlines.',
     resume: (h) => {
