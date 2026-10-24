@@ -3,6 +3,7 @@
 import '../../styles/global.css';
 import VelocitaTool from '../../components/mv/VelocitaTool';
 import { SITE_URL } from '../../data/site-config';
+import { licenzeHtml } from '../../i18n/licenze';
 import { P } from '../../lib/engine/params';
 import { displayDate } from '../../lib/format';
 ---
@@ -19,5 +20,6 @@ import { displayDate } from '../../lib/format';
   <body class="bg-white p-2 text-navy-900">
     <VelocitaTool client:load lang="en" id="embed" />
     <p class="mt-2 text-center text-xs text-navy-600"><a href={`${SITE_URL}/en/`} target="_blank" rel="noopener" class="underline">Multe e Autovelox</a> · Italian Highway Code, texts reread on {displayDate(P.retrieved_at, 'en-GB')}</p>
+    <div class="mt-1 text-center text-xs text-navy-600 [&_a]:underline"><Fragment set:html={licenzeHtml('en')} /></div>
   </body>
 </html>

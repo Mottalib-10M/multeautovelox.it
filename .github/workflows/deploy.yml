@@ -3,7 +3,8 @@ name: Multe e autovelox, relevé hebdomadaire du registre MIT et déploiement
 # Registre des appareils de contrôle de vitesse du ministère des Infrastructures et des Transports
 # (velox.mit.gov.it, decreto direttoriale n. 367 du 29 septembre 2025), contenu sous CC BY 3.0 IT.
 # Chaque lundi : relevé du registre (scripts/update-data.mjs ; si le serveur ne répond pas, dernière
-# capture complète du même point JSON dans la Wayback Machine, date de la capture affichée), relecture
+# capture complète du même point JSON dans la Wayback Machine, date de la capture affichée ; au 24/10/2026
+# aucune lecture directe n'a jamais réussi, le serveur MIT ne répond pas hors d'Italie), relecture
 # des articles du Codice della Strada sur Normattiva (un extrait qui ne figure plus mot pour mot fait
 # échouer l'étape), régénération des fichiers dérivés, tests, build, publication sur GitHub Pages ;
 # les données sont recommitées si elles ont changé.

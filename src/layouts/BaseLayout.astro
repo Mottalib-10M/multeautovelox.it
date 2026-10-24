@@ -6,6 +6,7 @@ import { consentStrings } from '../data/consent-strings';
 import { SITE_URL, YEAR, LAST_UPDATED, BING_VERIFY_CODE, GOOGLE_VERIFY_CODE, CONSENT_MODE, GA4_ID, CLARITY_ID, THEME_COLOR, AUTHOR_NAME, SITE_NAMES, LANG_TAGS, OG_LOCALES, LOGO_SYMBOL } from '../data/site-config';
 import { t } from '../i18n/ui';
 import { altPaths, route, LOCALES, DEFAULT_LOCALE, type Locale } from '../i18n/routes';
+import { licenzeHtml } from '../i18n/licenze';
 import { navCategories, navDirect, footerColumns, popularLinks } from '../i18n/nav';
 
 interface BreadcrumbItem { label: string; href?: string }
@@ -161,6 +162,7 @@ const crumbAside = Astro.slots.has('crumb-aside') ? (await Astro.slots.render('c
             <p>{ui.footerBrowser}</p>
             <p>{ui.asOf} {YEAR}, {ui.lastUpdated} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time></p>
             <p>&copy; {new Date().getFullYear()} {SITE_NAMES[lang]}. {ui.footerDisclaimer}</p>
+            <div class="max-w-3xl text-xs text-navy-600 [&_a]:underline"><Fragment set:html={licenzeHtml(lang === 'en' ? 'en' : 'it')} /></div>
             {(GA4_ID || CLARITY_ID) && CONSENT_MODE !== 'none' && <p><button type="button" data-consent-manage class="underline hover:text-navy-900">{consentStrings(lang).manage}</button></p>}
           </div>
         </div>

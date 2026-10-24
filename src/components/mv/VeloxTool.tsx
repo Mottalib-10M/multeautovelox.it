@@ -128,7 +128,7 @@ export default function VeloxTool({ lang: l, id = 'velox', mode = 'comune', defa
           </ul>
         )}
       </div>
-      <Note>{T(l, `Registro del Ministero delle infrastrutture e dei trasporti, versione del ${d(dataReg)}${meta.origine === 'wayback' ? ' (ultima copia completa disponibile)' : ''}: ${formatNumber(S.italia.totale, 0, l)} apparecchi dichiarati.`, `Register of the Ministry of Infrastructure and Transport, version of ${d(dataReg)}${meta.origine === 'wayback' ? ' (latest complete copy available)' : ''}: ${formatNumber(S.italia.totale, 0, l)} devices declared.`)}</Note>
+      <Note>{T(l, `Registro del Ministero delle infrastrutture e dei trasporti, versione del ${d(dataReg)}${meta.origine === 'wayback' ? ' (copia archiviata da Internet Archive, ultima copia completa disponibile)' : ''}: ${formatNumber(S.italia.totale, 0, l)} apparecchi dichiarati.`, `Register of the Ministry of Infrastructure and Transport, version of ${d(dataReg)}${meta.origine === 'wayback' ? ' (copy archived by the Internet Archive, latest complete copy available)' : ''}: ${formatNumber(S.italia.totale, 0, l)} devices declared.`)}</Note>
     </>
   );
   const result = (
