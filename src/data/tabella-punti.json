@@ -1,0 +1,782 @@
+{
+ "fonte": "Tabella dei punteggi previsti all'art. 126-bis, Codice della Strada (Normattiva)",
+ "vigore": "12-4-2025",
+ "righe": [
+  {
+   "articolo": "141",
+   "comma": "Comma 8",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Velocità",
+   "rubrica_en": "Speed"
+  },
+  {
+   "articolo": "141",
+   "comma": "Comma 9, terzo periodo",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Velocità",
+   "rubrica_en": "Speed"
+  },
+  {
+   "articolo": "142",
+   "comma": "Comma 8",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Limiti di velocità",
+   "rubrica_en": "Speed limits"
+  },
+  {
+   "articolo": "142",
+   "comma": "Comma 9",
+   "punti": 6,
+   "segno": "",
+   "rubrica": "Limiti di velocità",
+   "rubrica_en": "Speed limits"
+  },
+  {
+   "articolo": "142",
+   "comma": "Comma 9-bis",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Limiti di velocità",
+   "rubrica_en": "Speed limits"
+  },
+  {
+   "articolo": "143",
+   "comma": "Comma 11",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Posizione dei veicoli sulla carreggiata",
+   "rubrica_en": "Lane position"
+  },
+  {
+   "articolo": "143",
+   "comma": "Comma 12",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Posizione dei veicoli sulla carreggiata",
+   "rubrica_en": "Lane position"
+  },
+  {
+   "articolo": "143",
+   "comma": "Comma 13, con riferimento al comma 5",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Posizione dei veicoli sulla carreggiata",
+   "rubrica_en": "Lane position"
+  },
+  {
+   "articolo": "145",
+   "comma": "Comma 5",
+   "punti": 6,
+   "segno": "",
+   "rubrica": "Precedenza",
+   "rubrica_en": "Right of way"
+  },
+  {
+   "articolo": "145",
+   "comma": "Comma 10, con riferimento ai commi 2, 3, 4, 6, 7, 8 e 9",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Precedenza",
+   "rubrica_en": "Right of way"
+  },
+  {
+   "articolo": "146",
+   "comma": "Comma 2, ad eccezione dei segnali stradali di divieto di sosta e fermata",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Violazione della segnaletica stradale",
+   "rubrica_en": "Road signs and traffic lights"
+  },
+  {
+   "articolo": "146",
+   "comma": "Comma 3",
+   "punti": 6,
+   "segno": "",
+   "rubrica": "Violazione della segnaletica stradale",
+   "rubrica_en": "Road signs and traffic lights"
+  },
+  {
+   "articolo": "147",
+   "comma": "Comma 5",
+   "punti": 6,
+   "segno": "",
+   "rubrica": "Comportamento ai passaggi a livello",
+   "rubrica_en": "Level crossings"
+  },
+  {
+   "articolo": "148",
+   "comma": "Comma 15, con riferimento al comma 2",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Sorpasso",
+   "rubrica_en": "Overtaking"
+  },
+  {
+   "articolo": "148",
+   "comma": "Comma 15, con riferimento al comma 3",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Sorpasso",
+   "rubrica_en": "Overtaking"
+  },
+  {
+   "articolo": "148",
+   "comma": "Comma 15, con riferimento al comma 8",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Sorpasso",
+   "rubrica_en": "Overtaking"
+  },
+  {
+   "articolo": "148",
+   "comma": "Comma 16, terzo periodo",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Sorpasso",
+   "rubrica_en": "Overtaking"
+  },
+  {
+   "articolo": "149",
+   "comma": "Comma 4",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Distanza di sicurezza tra veicoli",
+   "rubrica_en": "Safe distance"
+  },
+  {
+   "articolo": "149",
+   "comma": "Comma 5, secondo periodo",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Distanza di sicurezza tra veicoli",
+   "rubrica_en": "Safe distance"
+  },
+  {
+   "articolo": "149",
+   "comma": "Comma 6",
+   "punti": 8,
+   "segno": "",
+   "rubrica": "Distanza di sicurezza tra veicoli",
+   "rubrica_en": "Safe distance"
+  },
+  {
+   "articolo": "150",
+   "comma": "Comma 5, con riferimento all'articolo 149, comma 5",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Incrocio tra veicoli nei passaggi ingombrati o su strade di montagna",
+   "rubrica_en": "Passing in narrow or mountain roads"
+  },
+  {
+   "articolo": "150",
+   "comma": "Comma 5, con riferimento all'articolo 149, comma 6",
+   "punti": 8,
+   "segno": "",
+   "rubrica": "Incrocio tra veicoli nei passaggi ingombrati o su strade di montagna",
+   "rubrica_en": "Passing in narrow or mountain roads"
+  },
+  {
+   "articolo": "152",
+   "comma": "Comma 3",
+   "punti": 1,
+   "segno": "",
+   "rubrica": "Segnalazione visiva e illuminazione dei veicoli",
+   "rubrica_en": "Vehicle lights"
+  },
+  {
+   "articolo": "153",
+   "comma": "Comma 10",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Uso dei dispositivi di segnalazione visiva e di illuminazione",
+   "rubrica_en": "Use of lights"
+  },
+  {
+   "articolo": "153",
+   "comma": "Comma 11",
+   "punti": 1,
+   "segno": "",
+   "rubrica": "Uso dei dispositivi di segnalazione visiva e di illuminazione",
+   "rubrica_en": "Use of lights"
+  },
+  {
+   "articolo": "154",
+   "comma": "Comma 7",
+   "punti": 8,
+   "segno": "",
+   "rubrica": "Cambiamento di direzione o di corsia o altre manovre",
+   "rubrica_en": "Turning and changing lanes"
+  },
+  {
+   "articolo": "154",
+   "comma": "Comma 8",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Cambiamento di direzione o di corsia o altre manovre",
+   "rubrica_en": "Turning and changing lanes"
+  },
+  {
+   "articolo": "158",
+   "comma": "Comma 2, lettere d) e h)",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Divieto di fermata e di sosta dei veicoli",
+   "rubrica_en": "No stopping and no parking"
+  },
+  {
+   "articolo": "158",
+   "comma": "Comma 2, lettera g)",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Divieto di fermata e di sosta dei veicoli",
+   "rubrica_en": "No stopping and no parking"
+  },
+  {
+   "articolo": "161",
+   "comma": "Commi 1 e 3",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Ingombro della carreggiata",
+   "rubrica_en": "Obstructing the road"
+  },
+  {
+   "articolo": "161",
+   "comma": "Comma 2",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Ingombro della carreggiata",
+   "rubrica_en": "Obstructing the road"
+  },
+  {
+   "articolo": "162",
+   "comma": "Comma 5",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Segnalazione di veicolo fermo",
+   "rubrica_en": "Warning triangle"
+  },
+  {
+   "articolo": "164",
+   "comma": "Comma 8",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Sistemazione del carico sui veicoli",
+   "rubrica_en": "Securing the load"
+  },
+  {
+   "articolo": "165",
+   "comma": "Comma 3",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Traino di veicoli in avaria",
+   "rubrica_en": "Towing a broken-down vehicle"
+  },
+  {
+   "articolo": "167",
+   "comma": "a) eccedenza non superiore a 1t",
+   "punti": 1,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "167",
+   "comma": "b) eccedenza non superiore a 2t",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "167",
+   "comma": "c) eccedenza non superiore a 3t",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "167",
+   "comma": "d) eccedenza superiore a 3t",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "167",
+   "comma": "a) eccedenza non superiore al 10 per cento",
+   "punti": 1,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "167",
+   "comma": "b) eccedenza non superiore al 20 per cento",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "167",
+   "comma": "c) eccedenza non superiore al 30 per cento",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "167",
+   "comma": "d) eccedenza superiore al 30 per cento",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "167",
+   "comma": "Comma 7",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Trasporti di cose su veicoli a motore e sui rimorchi",
+   "rubrica_en": "Overloading"
+  },
+  {
+   "articolo": "168",
+   "comma": "Comma 7",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Disciplina del trasporto su strada dei materiali pericolosi",
+   "rubrica_en": "Dangerous goods"
+  },
+  {
+   "articolo": "168",
+   "comma": "Comma 8",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Disciplina del trasporto su strada dei materiali pericolosi",
+   "rubrica_en": "Dangerous goods"
+  },
+  {
+   "articolo": "168",
+   "comma": "Comma 9",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Disciplina del trasporto su strada dei materiali pericolosi",
+   "rubrica_en": "Dangerous goods"
+  },
+  {
+   "articolo": "168",
+   "comma": "Comma 9-bis",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Disciplina del trasporto su strada dei materiali pericolosi",
+   "rubrica_en": "Dangerous goods"
+  },
+  {
+   "articolo": "169",
+   "comma": "Comma 8",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Trasporto di persone, animali e oggetti sui veicoli a motore",
+   "rubrica_en": "Carrying passengers, animals and objects"
+  },
+  {
+   "articolo": "169",
+   "comma": "Comma 9",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Trasporto di persone, animali e oggetti sui veicoli a motore",
+   "rubrica_en": "Carrying passengers, animals and objects"
+  },
+  {
+   "articolo": "169",
+   "comma": "Comma 10",
+   "punti": 1,
+   "segno": "",
+   "rubrica": "Trasporto di persone, animali e oggetti sui veicoli a motore",
+   "rubrica_en": "Carrying passengers, animals and objects"
+  },
+  {
+   "articolo": "170",
+   "comma": "Comma 6",
+   "punti": 1,
+   "segno": "",
+   "rubrica": "Trasporto di persone, animali e oggetti sui veicoli a motore a due ruote",
+   "rubrica_en": "Passengers on two-wheelers"
+  },
+  {
+   "articolo": "171",
+   "comma": "Comma 2",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Uso del casco protettivo per gli utenti di veicoli a due ruote",
+   "rubrica_en": "Helmets"
+  },
+  {
+   "articolo": "172",
+   "comma": "Commi 10 e 11",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Uso delle cinture di sicurezza e dei sistemi di ritenuta per bambini",
+   "rubrica_en": "Seat belts and child seats"
+  },
+  {
+   "articolo": "173",
+   "comma": "comma 3",
+   "punti": 8,
+   "segno": "-",
+   "rubrica": "Uso di lenti o di determinati apparecchi durante la guida",
+   "rubrica_en": "Glasses, phones and headphones while driving"
+  },
+  {
+   "articolo": "173",
+   "comma": "Comma 3-bis, primo periodo",
+   "punti": 5,
+   "segno": "-",
+   "rubrica": "Uso di lenti o di determinati apparecchi durante la guida",
+   "rubrica_en": "Glasses, phones and headphones while driving"
+  },
+  {
+   "articolo": "173",
+   "comma": "Comma 3-bis, secondo periodo",
+   "punti": 10,
+   "segno": "-",
+   "rubrica": "Uso di lenti o di determinati apparecchi durante la guida",
+   "rubrica_en": "Glasses, phones and headphones while driving"
+  },
+  {
+   "articolo": "174",
+   "comma": "Comma 5 per violazione dei tempi di guida",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Durata della guida degli autoveicoli adibiti al trasporto di persone o di cose",
+   "rubrica_en": "Driving and rest times (professional drivers)"
+  },
+  {
+   "articolo": "174",
+   "comma": "Comma 5 per violazione dei tempi di riposo",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Durata della guida degli autoveicoli adibiti al trasporto di persone o di cose",
+   "rubrica_en": "Driving and rest times (professional drivers)"
+  },
+  {
+   "articolo": "174",
+   "comma": "Comma 6",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Durata della guida degli autoveicoli adibiti al trasporto di persone o di cose",
+   "rubrica_en": "Driving and rest times (professional drivers)"
+  },
+  {
+   "articolo": "174",
+   "comma": "Comma 7 primo periodo",
+   "punti": 1,
+   "segno": "",
+   "rubrica": "Durata della guida degli autoveicoli adibiti al trasporto di persone o di cose",
+   "rubrica_en": "Driving and rest times (professional drivers)"
+  },
+  {
+   "articolo": "174",
+   "comma": "Comma 7 secondo periodo",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Durata della guida degli autoveicoli adibiti al trasporto di persone o di cose",
+   "rubrica_en": "Driving and rest times (professional drivers)"
+  },
+  {
+   "articolo": "174",
+   "comma": "Comma 7 terzo periodo per violazione dei tempi di guida",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Durata della guida degli autoveicoli adibiti al trasporto di persone o di cose",
+   "rubrica_en": "Driving and rest times (professional drivers)"
+  },
+  {
+   "articolo": "174",
+   "comma": "Comma 7 terzo periodo per violazione dei tempi di riposo",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Durata della guida degli autoveicoli adibiti al trasporto di persone o di cose",
+   "rubrica_en": "Driving and rest times (professional drivers)"
+  },
+  {
+   "articolo": "174",
+   "comma": "Comma 8",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Durata della guida degli autoveicoli adibiti al trasporto di persone o di cose",
+   "rubrica_en": "Driving and rest times (professional drivers)"
+  },
+  {
+   "articolo": "175",
+   "comma": "Comma 13",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Condizioni e limitazioni della circolazione sulle autostrade e sulle strade extraurbane principali",
+   "rubrica_en": "Who may use motorways"
+  },
+  {
+   "articolo": "175",
+   "comma": "Comma 14, con riferimento al comma 7, lettera a)",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Condizioni e limitazioni della circolazione sulle autostrade e sulle strade extraurbane principali",
+   "rubrica_en": "Who may use motorways"
+  },
+  {
+   "articolo": "175",
+   "comma": "Comma 16",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Condizioni e limitazioni della circolazione sulle autostrade e sulle strade extraurbane principali",
+   "rubrica_en": "Who may use motorways"
+  },
+  {
+   "articolo": "176",
+   "comma": "Comma 20, con riferimento al comma 1, lettera b)",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Comportamenti durante la circolazione sulle autostrade e sulle strade extraurbane principali",
+   "rubrica_en": "Conduct on motorways"
+  },
+  {
+   "articolo": "176",
+   "comma": "Comma 20, con riferimento al comma 1, lettere c) e d)",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Comportamenti durante la circolazione sulle autostrade e sulle strade extraurbane principali",
+   "rubrica_en": "Conduct on motorways"
+  },
+  {
+   "articolo": "176",
+   "comma": "Comma 21",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Comportamenti durante la circolazione sulle autostrade e sulle strade extraurbane principali",
+   "rubrica_en": "Conduct on motorways"
+  },
+  {
+   "articolo": "177",
+   "comma": "Comma 5",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Circolazione dei veicoli di polizia, antincendio, protezione civile e delle autoambulanze",
+   "rubrica_en": "Emergency vehicles"
+  },
+  {
+   "articolo": "178",
+   "comma": "Comma 5 per violazione dei tempi di guida",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Documenti di viaggio per trasporti professionali con veicoli non muniti di cronotachigrafo",
+   "rubrica_en": "Travel records without tachograph"
+  },
+  {
+   "articolo": "178",
+   "comma": "Comma 5 per violazione dei tempi di riposo",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Documenti di viaggio per trasporti professionali con veicoli non muniti di cronotachigrafo",
+   "rubrica_en": "Travel records without tachograph"
+  },
+  {
+   "articolo": "178",
+   "comma": "Comma 6",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Documenti di viaggio per trasporti professionali con veicoli non muniti di cronotachigrafo",
+   "rubrica_en": "Travel records without tachograph"
+  },
+  {
+   "articolo": "178",
+   "comma": "Comma 7 primo periodo",
+   "punti": 1,
+   "segno": "",
+   "rubrica": "Documenti di viaggio per trasporti professionali con veicoli non muniti di cronotachigrafo",
+   "rubrica_en": "Travel records without tachograph"
+  },
+  {
+   "articolo": "178",
+   "comma": "Comma 7 secondo periodo",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Documenti di viaggio per trasporti professionali con veicoli non muniti di cronotachigrafo",
+   "rubrica_en": "Travel records without tachograph"
+  },
+  {
+   "articolo": "178",
+   "comma": "Comma 7 terzo periodo per violazione dei tempi di guida",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Documenti di viaggio per trasporti professionali con veicoli non muniti di cronotachigrafo",
+   "rubrica_en": "Travel records without tachograph"
+  },
+  {
+   "articolo": "178",
+   "comma": "Comma 7 terzo periodo per violazione dei tempi di riposo",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Documenti di viaggio per trasporti professionali con veicoli non muniti di cronotachigrafo",
+   "rubrica_en": "Travel records without tachograph"
+  },
+  {
+   "articolo": "178",
+   "comma": "Comma 8",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Documenti di viaggio per trasporti professionali con veicoli non muniti di cronotachigrafo",
+   "rubrica_en": "Travel records without tachograph"
+  },
+  {
+   "articolo": "179",
+   "comma": "Commi 2 e 2-bis",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Cronotachigrafo e limitatore di velocità",
+   "rubrica_en": "Tachograph and speed limiter"
+  },
+  {
+   "articolo": "186",
+   "comma": "Commi 2 e 7",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Guida sotto l'influenza dell'alcool",
+   "rubrica_en": "Drink-driving"
+  },
+  {
+   "articolo": "186-bis",
+   "comma": "Comma 2",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Guida sotto l'influenza dell'alcool per conducenti under 21, neopatentati e professionali",
+   "rubrica_en": "Zero alcohol for under-21s, new and professional drivers"
+  },
+  {
+   "articolo": "187",
+   "comma": "Commi 1 e 8",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Guida dopo l'assunzione di sostanze stupefacenti",
+   "rubrica_en": "Driving after taking drugs"
+  },
+  {
+   "articolo": "188",
+   "comma": "Comma 4",
+   "punti": 6,
+   "segno": "",
+   "rubrica": "Circolazione e sosta dei veicoli al servizio di persone invalide",
+   "rubrica_en": "Disabled parking"
+  },
+  {
+   "articolo": "188",
+   "comma": "Comma 5",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Circolazione e sosta dei veicoli al servizio di persone invalide",
+   "rubrica_en": "Disabled parking"
+  },
+  {
+   "articolo": "189",
+   "comma": "Comma 5, primo periodo",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Comportamento in caso di incidente",
+   "rubrica_en": "Conduct after an accident"
+  },
+  {
+   "articolo": "189",
+   "comma": "Comma 5, secondo periodo",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Comportamento in caso di incidente",
+   "rubrica_en": "Conduct after an accident"
+  },
+  {
+   "articolo": "189",
+   "comma": "Comma 6",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Comportamento in caso di incidente",
+   "rubrica_en": "Conduct after an accident"
+  },
+  {
+   "articolo": "189",
+   "comma": "Comma 9",
+   "punti": 2,
+   "segno": "",
+   "rubrica": "Comportamento in caso di incidente",
+   "rubrica_en": "Conduct after an accident"
+  },
+  {
+   "articolo": "191",
+   "comma": "Comma 1",
+   "punti": 8,
+   "segno": "",
+   "rubrica": "Comportamento dei conducenti nei confronti dei pedoni",
+   "rubrica_en": "Pedestrians"
+  },
+  {
+   "articolo": "191",
+   "comma": "Comma 2",
+   "punti": 4,
+   "segno": "",
+   "rubrica": "Comportamento dei conducenti nei confronti dei pedoni",
+   "rubrica_en": "Pedestrians"
+  },
+  {
+   "articolo": "191",
+   "comma": "Comma 3",
+   "punti": 8,
+   "segno": "",
+   "rubrica": "Comportamento dei conducenti nei confronti dei pedoni",
+   "rubrica_en": "Pedestrians"
+  },
+  {
+   "articolo": "192",
+   "comma": "Comma 6",
+   "punti": 3,
+   "segno": "",
+   "rubrica": "Obblighi verso funzionari, ufficiali e agenti",
+   "rubrica_en": "Police checks"
+  },
+  {
+   "articolo": "192",
+   "comma": "Comma 6-bis, primo periodo",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Obblighi verso funzionari, ufficiali e agenti",
+   "rubrica_en": "Police checks"
+  },
+  {
+   "articolo": "192",
+   "comma": "Comma 6-bis, secondo periodo",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Obblighi verso funzionari, ufficiali e agenti",
+   "rubrica_en": "Police checks"
+  },
+  {
+   "articolo": "192",
+   "comma": "Comma 7",
+   "punti": 10,
+   "segno": "",
+   "rubrica": "Obblighi verso funzionari, ufficiali e agenti",
+   "rubrica_en": "Police checks"
+  },
+  {
+   "articolo": "193",
+   "comma": "Comma 2",
+   "punti": 5,
+   "segno": "",
+   "rubrica": "Obbligo dell'assicurazione di responsabilità civile",
+   "rubrica_en": "Compulsory insurance"
+  }
+ ]
+}

@@ -1,0 +1,278 @@
+{
+  "checked_at": "2026-10-24",
+  "vigore": {
+    "7": "25-4-2026",
+    "142": "14-12-2024",
+    "146": "15-1-2021",
+    "158": "25-4-2026",
+    "172": "15-1-2021",
+    "173": "14-12-2024",
+    "176": "14-12-2024",
+    "186": "14-12-2024",
+    "195": "31-12-2025",
+    "201": "9-8-2025",
+    "202": "15-4-2016",
+    "203": "6-8-2022",
+    "126bis": "10-11-2021",
+    "204bis": "6-10-2011",
+    "reg345": "19-12-1996",
+    "dlgs150art7": "6-10-2011",
+    "tabella": "12-4-2025"
+  },
+  "total": 36,
+  "failed": [],
+  "results": [
+    {
+      "where": "params.next_update",
+      "article": "195",
+      "verify": "è adottato entro il 1° dicembre 2026 per l'aggiornamento delle sanzioni applicate a decorrere dal 1° gennaio",
+      "vigore": "31-12-2025",
+      "ok": true
+    },
+    {
+      "where": "params.tolerance",
+      "article": "reg345",
+      "verify": "al valore rilevato sia applicata una riduzione pari al 5%, con un minimo di 5 km/h",
+      "vigore": "19-12-1996",
+      "ok": true
+    },
+    {
+      "where": "params.tolerance_pedaggio",
+      "article": "reg345",
+      "verify": "pari al 5, 10, 15 per cento a seconda che la velocità dedotta risulti",
+      "vigore": "19-12-1996",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.bands[0]",
+      "article": "142",
+      "verify": "di non oltre 10 km/h, è soggetto alla sanzione amministrativa del pagamento di una somma da € 42 a € 173",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.bands[1]",
+      "article": "142",
+      "verify": "di oltre 10 km/h e di non oltre 40 km/h i limiti massimi di velocità è soggetto alla sanzione amministrativa del pagamento di una somma da € 173 a € 694",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.bands[2]",
+      "article": "142",
+      "verify": "di oltre 40 km/h ma di non oltre 60 km/h i limiti massimi di velocità è soggetto alla sanzione amministrativa del pagamento di una somma da € 543 a € 2.170. Dalla violazione consegue la sanzione amministrativa accessoria della sospensione della patente di guida da uno a tre mesi",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.bands[3]",
+      "article": "142",
+      "verify": "di oltre 60 km/h i limiti massimi di velocità è soggetto alla sanzione amministrativa del pagamento di una somma da € 845 a € 3.382. Dalla violazione consegue la sanzione amministrativa accessoria della sospensione della patente di guida da sei a dodici mesi",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.repeat_in_town_c8",
+      "article": "142",
+      "verify": "all'interno del centro abitato e per almeno due volte nell'arco di un anno, si applicano la sanzione amministrativa del pagamento di una somma da euro 220 a euro 880 e la sanzione amministrativa accessoria della sospensione della patente di guida da quindici a trenta giorni",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.repeat_two_years",
+      "article": "142",
+      "verify": "la sanzione amministrativa accessoria è della sospensione della patente da otto a diciotto mesi",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.heavy_vehicles_doubling",
+      "article": "142",
+      "verify": "lettere b), e), f), g), h), i) e l) le sanzioni amministrative pecuniarie e quelle accessorie ivi previste sono raddoppiate",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.same_hour_same_body",
+      "article": "142",
+      "verify": "in un periodo di tempo non superiore a un'ora, si applicano, se più favorevoli, le sanzioni amministrative previste per la violazione più grave aumentate di un terzo",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.night_surcharge",
+      "article": "195",
+      "verify": "sono aumentate di un terzo quando la violazione è commessa dopo le ore 22 e prima delle ore 7",
+      "vigore": "31-12-2025",
+      "ok": true
+    },
+    {
+      "where": "params.payment",
+      "article": "202",
+      "verify": "Tale somma è ridotta del 30 per cento se il pagamento è effettuato entro cinque giorni dalla contestazione o dalla notificazione. La riduzione di cui al periodo precedente non si applica alle violazioni del presente codice per cui è prevista la sanzione accessoria della confisca del veicolo",
+      "vigore": "15-4-2016",
+      "ok": true
+    },
+    {
+      "where": "params.unpaid",
+      "article": "203",
+      "verify": "costituisce titolo esecutivo per una somma pari alla metà del massimo della sanzione amministrativa edittale",
+      "vigore": "6-8-2022",
+      "ok": true
+    },
+    {
+      "where": "params.notification",
+      "article": "201",
+      "verify": "entro novanta giorni dall'accertamento, essere notificato",
+      "vigore": "9-8-2025",
+      "ok": true
+    },
+    {
+      "where": "params.notification.abroad",
+      "article": "201",
+      "verify": "Per i residenti all'estero la notifica deve essere effettuata entro trecentosessanta giorni dall'accertamento",
+      "vigore": "9-8-2025",
+      "ok": true
+    },
+    {
+      "where": "params.appeal.prefetto",
+      "article": "203",
+      "verify": "nel termine di giorni sessanta dalla contestazione o dalla notificazione",
+      "vigore": "6-8-2022",
+      "ok": true
+    },
+    {
+      "where": "params.appeal.giudice_di_pace",
+      "article": "dlgs150art7",
+      "verify": "entro trenta giorni dalla data di contestazione della violazione o di notificazione del verbale di accertamento, ovvero entro sessanta giorni se il ricorrente risiede all'estero",
+      "vigore": "6-10-2011",
+      "ok": true
+    },
+    {
+      "where": "params.points.neopatentato_doubling",
+      "article": "tabella",
+      "verify": "sono raddoppiati qualora le violazioni siano commesse entro i primi tre anni dal rilascio",
+      "vigore": "12-4-2025",
+      "ok": true
+    },
+    {
+      "where": "params.points.recovery_course",
+      "article": "126bis",
+      "verify": "consente di riacquistare sei punti",
+      "vigore": "10-11-2021",
+      "ok": true
+    },
+    {
+      "where": "params.points.recovery_two_years",
+      "article": "126bis",
+      "verify": "la mancanza, per il periodo di due anni, di violazioni di una norma di comportamento da cui derivi la decurtazione del punteggio, determina l'attribuzione del completo punteggio iniziale",
+      "vigore": "10-11-2021",
+      "ok": true
+    },
+    {
+      "where": "params.points.bonus",
+      "article": "126bis",
+      "verify": "determina l'attribuzione di un credito di due punti, fino a un massimo di dieci punti",
+      "vigore": "10-11-2021",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[0]",
+      "article": "173",
+      "verify": "da euro 250 a euro 1.000 e alla sanzione amministrativa accessoria della sospensione della patente di guida da quindici giorni a due mesi",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[1]",
+      "article": "172",
+      "verify": "è soggetto alla sanzione amministrativa del pagamento di una somma ((da € 83 a € 332))",
+      "vigore": "15-1-2021",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[2]",
+      "article": "146",
+      "verify": "vietino la marcia stessa, è soggetto alla sanzione amministrativa del pagamento di una somma ((da € 167 a € 665))",
+      "vigore": "15-1-2021",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[3]",
+      "article": "146",
+      "verify": "è soggetto alla sanzione amministrativa del pagamento di una somma da € 42 a € 173. Sono fatte salve",
+      "vigore": "15-1-2021",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[4]",
+      "article": "7",
+      "verify": "Chiunque viola gli altri obblighi, divieti o limitazioni previsti nel presente articolo, è soggetto alla sanzione amministrativa del pagamento di una somma da € 42 a € 173",
+      "vigore": "25-4-2026",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[5]",
+      "article": "7",
+      "verify": "nelle aree pedonali e nelle zone a traffico limitato è soggetta alla sanzione amministrativa del pagamento di una somma da € 83 a € 332",
+      "vigore": "25-4-2026",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[6]",
+      "article": "158",
+      "verify": "da euro 41 a euro 168 per i ciclomotori e i motoveicoli a due ruote e da euro 87 a euro 344 per i restanti veicoli",
+      "vigore": "25-4-2026",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[7]",
+      "article": "186",
+      "verify": "da € 543 a € 2.170, qualora sia stato accertato un valore corrispondente ad un tasso alcolemico superiore a 0,5 e non superiore a 0,8 grammi per litro",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[8]",
+      "article": "176",
+      "verify": "è soggetto alla sanzione amministrativa del pagamento di una somma da € 430 a € 1.731",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.bands[*].points",
+      "article": "tabella",
+      "verify": "Art. 142 | Comma 8 | 3 | Comma 9 | 6 | Comma 9-bis | 10",
+      "vigore": "12-4-2025",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations.cellulare.points",
+      "article": "tabella",
+      "verify": "Comma 3-bis, primo periodo | -5 | Comma 3-bis, secondo periodo | -10",
+      "vigore": "12-4-2025",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations.cintura.points",
+      "article": "tabella",
+      "verify": "Art. 172 | Commi 10 e 11 | 5",
+      "vigore": "12-4-2025",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations.semaforo/segnaletica.points",
+      "article": "tabella",
+      "verify": "Art. 146 | Comma 2, ad eccezione dei segnali stradali di divieto di sosta e fermata | 2 | Comma 3 | 6",
+      "vigore": "12-4-2025",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations.alcol.points",
+      "article": "tabella",
+      "verify": "Art. 186 | Commi 2 e 7 | 10",
+      "vigore": "12-4-2025",
+      "ok": true
+    }
+  ]
+}

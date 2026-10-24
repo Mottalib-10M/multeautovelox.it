@@ -1,0 +1,28 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate, formatNumber } from '../../lib/format';
+import { P } from '../../lib/engine/params';
+import S from '../../data/velox/stats.json';
+const lang = 'en';
+const reg = S.meta.catturato_il.slice(0, 10);
+---
+<PageLayout title="Multe e Autovelox, about us: who works out Italian fines" description="Who publishes Multe e Autovelox, why a neutral calculator of Italian traffic fines, where the amounts and camera register come from, how to report an error." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">About Multe e Autovelox</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>Multe e Autovelox is published by Radif Partners. It answers the questions raised by an Italian fine (a verbale) in the post or at the rental desk: how much do I pay, by when, how many points do I lose, and was the camera declared?</p>
+    <h2>Why this site exists</h2>
+    <p>On those questions you mostly find news articles that repeat the rules without doing the sum, and sites that sell appeals or legal services, with a table to read for yourself. The tolerance is often forgotten, the night surcharge left out, and the date of the camera list never given. This site applies the texts to your case: the speed held after the 5% reduction, the article 142 band, the amount within 5 and 60 days, the points and the suspension, and the {formatNumber(S.italia.totale, 0, 'en')} devices of the ministry’s register by comune, with the date of the copy read.</p>
+    <h2>Where the figures come from</h2>
+    <p>The amounts come from the Italian Highway Code and its Regulation, reread on Normattiva on {displayDate(P.retrieved_at, 'en-GB')}. The cameras come from the register of the Ministry of Infrastructure and Transport (CC BY 3.0 IT) in its version of {displayDate(reg, 'en-GB')}, and the comuni from ISTAT (CC BY 4.0). Everything is set out in the <a href={route('method', lang)}>method</a>.</p>
+    <h2>What we are not</h2>
+    <p>Radif Partners is not the ministry, the police, a prefettura or any public body, nor a law firm. We sell nothing, take no commission, recommend no provider and ask for no contact details. Only the fine you receive, or a decision of the prefetto or the court, is binding.</p>
+    <h2>Funding and data</h2><p>The site is free, with no sign-up. Calculations run in your browser: the speeds or dates you enter are sent nowhere. If it ever shows advertising, it will never sit above the tool and will never sell appeals.</p>
+    <h2>Why in English</h2><p>Every page exists in Italian and English, for visitors who drove a rental car in Italy and for people who live there: the Italian words on the fine (velocità accertata, pagamento in misura ridotta, ricorso) are explained.</p>
+    <h2>Write to us</h2><p>An amount that does not match your fine, a camera that has gone, a text that has changed: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. See also the <a href={route('editorial', lang)}>editorial policy</a> and the <a href={route('terms', lang)}>legal notice</a>.</p>
+    <p class="text-sm text-navy-600">Texts reread on <time datetime={P.retrieved_at}>{displayDate(P.retrieved_at, 'en-GB')}</time> · MIT register of <time datetime={reg}>{displayDate(reg, 'en-GB')}</time>.</p>
+  </div>
+</PageLayout>

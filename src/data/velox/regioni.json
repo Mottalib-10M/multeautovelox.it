@@ -1,0 +1,213 @@
+[
+  {
+    "regione": "Veneto",
+    "comuni": 222,
+    "totale": 428,
+    "segnalati_non_attivi": 1,
+    "fisso_mobile": 20,
+    "mobile": 228,
+    "fisso": 107,
+    "non_precisato": 71,
+    "velocita_media": 2
+  },
+  {
+    "regione": "Lombardia",
+    "comuni": 299,
+    "totale": 528,
+    "segnalati_non_attivi": 9,
+    "mobile": 259,
+    "non_precisato": 102,
+    "fisso": 109,
+    "fisso_mobile": 14,
+    "velocita_media": 44
+  },
+  {
+    "regione": "Sicilia",
+    "comuni": 68,
+    "totale": 111,
+    "segnalati_non_attivi": 0,
+    "mobile": 37,
+    "non_precisato": 55,
+    "fisso_mobile": 7,
+    "fisso": 12
+  },
+  {
+    "regione": "Calabria",
+    "comuni": 25,
+    "totale": 48,
+    "segnalati_non_attivi": 0,
+    "mobile": 4,
+    "velocita_media": 23,
+    "non_precisato": 7,
+    "fisso": 9,
+    "fisso_mobile": 5
+  },
+  {
+    "regione": "Umbria",
+    "comuni": 38,
+    "totale": 64,
+    "segnalati_non_attivi": 0,
+    "non_precisato": 34,
+    "fisso_mobile": 6,
+    "fisso": 4,
+    "mobile": 16,
+    "velocita_media": 4
+  },
+  {
+    "regione": "Molise",
+    "comuni": 10,
+    "totale": 16,
+    "segnalati_non_attivi": 0,
+    "mobile": 6,
+    "non_precisato": 4,
+    "fisso_mobile": 3,
+    "fisso": 3
+  },
+  {
+    "regione": "Piemonte",
+    "comuni": 174,
+    "totale": 386,
+    "segnalati_non_attivi": 1,
+    "mobile": 153,
+    "fisso_mobile": 16,
+    "non_precisato": 133,
+    "fisso": 49,
+    "velocita_media": 35
+  },
+  {
+    "regione": "Lazio",
+    "comuni": 59,
+    "totale": 191,
+    "segnalati_non_attivi": 1,
+    "non_precisato": 77,
+    "mobile": 60,
+    "fisso": 31,
+    "velocita_media": 23
+  },
+  {
+    "regione": "Liguria",
+    "comuni": 48,
+    "totale": 135,
+    "segnalati_non_attivi": 5,
+    "mobile": 34,
+    "non_precisato": 29,
+    "fisso": 51,
+    "fisso_mobile": 5,
+    "velocita_media": 16
+  },
+  {
+    "regione": "Trentino-Alto Adige/Südtirol",
+    "comuni": 51,
+    "totale": 93,
+    "segnalati_non_attivi": 0,
+    "mobile": 66,
+    "non_precisato": 17,
+    "fisso": 6,
+    "fisso_mobile": 4
+  },
+  {
+    "regione": "Abruzzo",
+    "comuni": 41,
+    "totale": 81,
+    "segnalati_non_attivi": 0,
+    "mobile": 46,
+    "fisso_mobile": 13,
+    "fisso": 9,
+    "non_precisato": 13
+  },
+  {
+    "regione": "Puglia",
+    "comuni": 37,
+    "totale": 55,
+    "segnalati_non_attivi": 4,
+    "non_precisato": 21,
+    "mobile": 20,
+    "fisso_mobile": 6,
+    "fisso": 6,
+    "velocita_media": 2
+  },
+  {
+    "regione": "Emilia-Romagna",
+    "comuni": 120,
+    "totale": 408,
+    "segnalati_non_attivi": 5,
+    "non_precisato": 88,
+    "mobile": 146,
+    "fisso": 132,
+    "fisso_mobile": 16,
+    "velocita_media": 26
+  },
+  {
+    "regione": "Campania",
+    "comuni": 37,
+    "totale": 59,
+    "segnalati_non_attivi": 0,
+    "fisso": 9,
+    "non_precisato": 30,
+    "mobile": 8,
+    "velocita_media": 9,
+    "fisso_mobile": 3
+  },
+  {
+    "regione": "Marche",
+    "comuni": 59,
+    "totale": 109,
+    "segnalati_non_attivi": 0,
+    "fisso": 18,
+    "mobile": 46,
+    "non_precisato": 33,
+    "fisso_mobile": 9,
+    "velocita_media": 3
+  },
+  {
+    "regione": "Toscana",
+    "comuni": 111,
+    "totale": 283,
+    "segnalati_non_attivi": 0,
+    "fisso_mobile": 15,
+    "non_precisato": 115,
+    "mobile": 102,
+    "fisso": 35,
+    "velocita_media": 16
+  },
+  {
+    "regione": "Valle d'Aosta/Vallée d'Aoste",
+    "comuni": 10,
+    "totale": 16,
+    "segnalati_non_attivi": 1,
+    "mobile": 5,
+    "non_precisato": 9,
+    "fisso_mobile": 2
+  },
+  {
+    "regione": "Friuli-Venezia Giulia",
+    "comuni": 66,
+    "totale": 115,
+    "segnalati_non_attivi": 0,
+    "mobile": 72,
+    "non_precisato": 28,
+    "velocita_media": 10,
+    "fisso_mobile": 2,
+    "fisso": 3
+  },
+  {
+    "regione": "Sardegna",
+    "comuni": 19,
+    "totale": 31,
+    "segnalati_non_attivi": 0,
+    "non_precisato": 12,
+    "mobile": 13,
+    "fisso": 4,
+    "fisso_mobile": 2
+  },
+  {
+    "regione": "Basilicata",
+    "comuni": 9,
+    "totale": 17,
+    "segnalati_non_attivi": 0,
+    "velocita_media": 3,
+    "mobile": 3,
+    "fisso": 2,
+    "non_precisato": 9
+  }
+]

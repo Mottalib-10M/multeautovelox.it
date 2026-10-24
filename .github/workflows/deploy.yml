@@ -1,0 +1,79 @@
+name: Multe e autovelox, relevé hebdomadaire du registre MIT et déploiement
+
+# Registre des appareils de contrôle de vitesse du ministère des Infrastructures et des Transports
+# (velox.mit.gov.it, decreto direttoriale n. 367 du 29 septembre 2025), contenu sous CC BY 3.0 IT.
+# Chaque lundi : relevé du registre (scripts/update-data.mjs ; si le serveur ne répond pas, dernière
+# capture complète du même point JSON dans la Wayback Machine, date de la capture affichée), relecture
+# des articles du Codice della Strada sur Normattiva (un extrait qui ne figure plus mot pour mot fait
+# échouer l'étape), régénération des fichiers dérivés, tests, build, publication sur GitHub Pages ;
+# les données sont recommitées si elles ont changé.
+# Moins de 3 000 appareils, fichier coupé ou réseau en panne : le script n'écrit rien, le site garde
+# le fichier précédent. Si un test échoue, rien n'est publié. Aucune clé d'API.
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+  schedule:
+    - cron: '20 5 * * 1'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+      - name: Relevé du registre MIT, ISTAT et relecture Normattiva
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: node scripts/update-data.mjs
+      - name: Fichiers dérivés (stats, communes, provinces, tableau des points)
+        run: node scripts/build-derived.mjs
+      - name: Tests du moteur
+        run: npx vitest run
+      - name: Build (avec contrôle des snippets)
+        run: npm run build
+      - name: Recommit des données si elles ont changé
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "releve-autovelox"
+          git config user.email "releve-autovelox@users.noreply.github.com"
+          git add src/data public/data data/law-check.json data/raw/*.json data/raw/*.csv 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Registre autovelox : relevé du $(date -u +%F)" && git push || echo "push refusé, relevé gardé pour le prochain passage"
+          fi
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Checkout (script IndexNow)
+        uses: actions/checkout@v4
+      - name: Ping IndexNow
+        continue-on-error: true
+        run: bash scripts/indexnow.sh

@@ -1,0 +1,28 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'it';
+---
+<PageLayout title={`Politica editoriale – ${SITE_NAMES[lang]}`} description="Da dove vengono importi, punti e registro degli autovelox pubblicati qui, chi ne risponde, ogni quanto vengono riletti e cosa succede quando si segnala un errore." lang={lang} noindex={true} breadcrumbs={[{ label: 'Politica editoriale' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Politica editoriale e delle correzioni</h1>
+    <p>Un importo sbagliato fa pagare troppo o perdere lo sconto dei 5 giorni; una scadenza sbagliata fa arrivare tardi un ricorso. Ecco da dove vengono i nostri numeri e cosa facciamo quando uno è sbagliato.</p>
+    <h2>Responsabilità</h2><p>{AUTHOR_NAME} risponde di ogni importo, punto, scadenza e calcolo degli strumenti. Un numero che non corrisponde alla sua fonte si segnala a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Solo fonti primarie</h2>
+    <ul>
+      <li><strong>il Codice della Strada e il suo Regolamento</strong>, nel testo vigente su Normattiva, e le leggi che li modificano;</li>
+      <li><strong>la tabella dei punti dell’articolo 126-bis</strong>, letta riga per riga;</li>
+      <li><strong>il registro dei dispositivi di rilevamento della velocità</strong> del Ministero delle infrastrutture e dei trasporti (CC BY 3.0 IT);</li>
+      <li><strong>l’elenco ISTAT dei comuni</strong> (CC BY 4.0), per abbinare ogni apparecchio al suo comune.</li>
+    </ul>
+    <p>Nessun numero viene da servizi di ricorso, studi legali, assicurazioni o forum. Una sanzione che non abbiamo potuto verificare su un testo vigente non viene pubblicata.</p>
+    <h2>La forbice del testo, mai una previsione</h2><p>Indichiamo il minimo e il massimo previsti dal testo. Non prevediamo cosa deciderà un prefetto o un giudice e non promettiamo l’esito di un ricorso.</p>
+    <h2>Controlli prima della pubblicazione</h2><p>Gli esempi del metodo, i confini di ogni fascia e le scadenze sono test; un aggiornamento che li fa fallire viene bloccato. Un registro con meno di 3 000 apparecchi viene rifiutato e ogni importo viene confrontato con una frase letterale della legge.</p>
+    <h2>Calendario degli aggiornamenti</h2><p>Registro e testi: ogni settimana. La data della copia del registro e quella della rilettura dei testi sono scritte nelle pagine.</p>
+    <h2>Gestione degli errori</h2>
+    <ol><li>Verifica sul testo vigente.</li><li>Parametri o codice corretti, un test aggiunto.</li><li>Nuova data sulle pagine interessate.</li></ol>
+    <h2>Indipendenza</h2><p>Nessun legame commerciale con avvocati, servizi di ricorso, autoscuole o assicurazioni. Nessun link sponsorizzato nei testi. Un eventuale rapporto commerciale verrebbe dichiarato chiaramente.</p>
+    <p>Vedi anche il <a href={route('method', lang)}>metodo</a>. Versione: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

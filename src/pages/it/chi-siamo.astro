@@ -1,0 +1,28 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate, formatNumber } from '../../lib/format';
+import { P } from '../../lib/engine/params';
+import S from '../../data/velox/stats.json';
+const lang = 'it';
+const reg = S.meta.catturato_il.slice(0, 10);
+---
+<PageLayout title="Multe e Autovelox, chi siamo: chi calcola le multe italiane" description="Chi pubblica Multe e Autovelox, perché un calcolatore neutrale delle multe stradali, da dove vengono importi e registro autovelox, come segnalare un errore." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Chi siamo', path: route('about', lang) }])]} breadcrumbs={[{ label: 'Chi siamo' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Chi pubblica Multe e Autovelox</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>Multe e Autovelox è pubblicato da Radif Partners. Risponde alle domande di chi trova un verbale nella cassetta della posta: quanto pago, entro quando, quanti punti perdo, e l’autovelox era dichiarato?</p>
+    <h2>Perché questo sito</h2>
+    <p>Su queste domande si trovano soprattutto articoli che ripetono le regole senza fare il conto, e siti che vendono ricorsi o consulenze, con una tabella da leggere da soli. La tolleranza viene spesso dimenticata, la maggiorazione notturna omessa, la data dell’elenco degli autovelox mai indicata. Questo sito applica i testi al tuo caso: la velocità accertata dopo la riduzione del 5 %, la fascia dell’articolo 142, l’importo entro 5 e 60 giorni, i punti e la sospensione, e i {formatNumber(S.italia.totale, 0, 'it')} apparecchi del registro del Ministero per comune, con la data della copia letta.</p>
+    <h2>Da dove vengono i numeri</h2>
+    <p>Gli importi vengono dal Codice della Strada e dal suo Regolamento, riletti su Normattiva il {displayDate(P.retrieved_at, 'it-IT')}. Gli autovelox vengono dal registro del Ministero delle infrastrutture e dei trasporti (CC BY 3.0 IT) nella versione del {displayDate(reg, 'it-IT')}, i comuni dall’ISTAT (CC BY 4.0). Tutto è spiegato nel <a href={route('method', lang)}>metodo</a>.</p>
+    <h2>Cosa non siamo</h2>
+    <p>Radif Partners non è il Ministero, la Polizia, una prefettura né un ente pubblico, e non è uno studio legale. Non vendiamo nulla, non prendiamo commissioni, non consigliamo fornitori e non chiediamo dati di contatto. Fa fede solo il verbale ricevuto, o la decisione del prefetto o del giudice.</p>
+    <h2>Finanziamento e dati</h2><p>Il sito è gratuito e senza registrazione. I calcoli si fanno nel tuo browser: velocità e date che inserisci non vengono inviate da nessuna parte. Se un giorno ci sarà pubblicità, non starà mai sopra il calcolatore e non venderà ricorsi.</p>
+    <h2>Perché anche in inglese</h2><p>Ogni pagina esiste in italiano e in inglese, per chi ha guidato un’auto a noleggio in Italia e per chi ci vive da straniero: le parole del verbale (velocità accertata, pagamento in misura ridotta, ricorso) vengono spiegate.</p>
+    <h2>Scrivici</h2><p>Un importo che non corrisponde al tuo verbale, un autovelox dismesso, un testo cambiato: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Vedi anche la <a href={route('editorial', lang)}>politica editoriale</a> e le <a href={route('terms', lang)}>note legali</a>.</p>
+    <p class="text-sm text-navy-600">Testi riletti il <time datetime={P.retrieved_at}>{displayDate(P.retrieved_at, 'it-IT')}</time> · registro MIT del <time datetime={reg}>{displayDate(reg, 'it-IT')}</time>.</p>
+  </div>
+</PageLayout>

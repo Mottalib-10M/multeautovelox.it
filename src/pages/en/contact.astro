@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`Contact – ${SITE_NAMES[lang]}`} description="Write to the publisher of Multe e Autovelox: report a wrong amount or points figure, a camera that has gone, a question on the method, or embed the calculator." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>One address, read every week: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. There is no phone line and we call nobody back: this site sells nothing.</p>
+    <h2>Report an error</h2>
+    <p>For an amount or a number of points, attach the article or official page that contradicts the calculation, or paste the tool’s share link: it carries your choices and nothing else. For a camera, give the comune and the body that runs it. Never send us your fine, plate or licence number: we do not need them. The procedure is in the <a href={route('editorial', lang)}>editorial policy</a>.</p>
+    <h2>What we cannot do</h2>
+    <p>We have access to no record: not your points balance, your fines or the photos. Your balance is on the Portale dell’automobilista; a fine is paid or appealed as printed on it, with the body that issued it. We give no legal advice on individual cases.</p>
+    <h2>Embed the calculator</h2>
+    <p>Driving schools, expat forums, car-hire guides: the fine calculator can be embedded free in an iframe. The code is on the <a href={route('widget', lang)}>Embed the calculator</a> page.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>{AUTHOR_NAME} is responsible for the content of Multe e Autovelox; full details are in the <a href={route('terms', lang)}>legal notice</a>. Page reviewed on {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

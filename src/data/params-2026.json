@@ -1,0 +1,578 @@
+{
+  "_comment": "Barème des sanctions routières italiennes en vigueur au 2026-10-24. Chaque valeur est lue sur Normattiva (texte multivigente du Codice della Strada, D.Lgs. 30 aprile 1992 n. 285, et du Regolamento, DPR 16 dicembre 1992 n. 495). Le champ 'verify' est un extrait littéral du texte de loi : scripts/update-data.mjs le recherche dans le texte relu et signale tout écart (le barème ne se modifie jamais tout seul). Textes de loi exclus du droit d'auteur : art. 5 L. 22 aprile 1941 n. 633.",
+  "year": 2026,
+  "retrieved_at": "2026-10-24",
+  "amounts_valid_until": "2026-12-31",
+  "next_update": {
+    "status": "a_paraitre",
+    "rule": "Art. 195 c.3 CdS : aggiornamento biennale ISTAT (FOI). Sospeso per il 2023, 2024, 2025 e 2026 (L. 29 dicembre 2022 n. 197, art. 1 c. 497, come modificata dal D.L. 31 dicembre 2025 n. 200). Il decreto va adottato entro il 1° dicembre 2026 per le sanzioni applicate dal 1° gennaio 2027.",
+    "decree_due_by": "2026-12-01",
+    "applies_from": "2027-01-01",
+    "amounts_2027": null,
+    "verify": "è adottato entro il 1° dicembre 2026 per l'aggiornamento delle sanzioni applicate a decorrere dal 1° gennaio",
+    "article": "195"
+  },
+  "tolerance": {
+    "percent": 0.05,
+    "min_kmh": 5,
+    "article": "reg345",
+    "ref": "Art. 345 c.2 DPR 495/1992",
+    "verify": "al valore rilevato sia applicata una riduzione pari al 5%, con un minimo di 5 km/h"
+  },
+  "tolerance_pedaggio": {
+    "ref": "Art. 345 c.3 DPR 495/1992 (velocità media dedotta dai biglietti autostradali)",
+    "article": "reg345",
+    "bands": [
+      {
+        "below_kmh": 70,
+        "percent": 0.05
+      },
+      {
+        "below_kmh": 130,
+        "percent": 0.1
+      },
+      {
+        "below_kmh": null,
+        "percent": 0.15
+      }
+    ],
+    "verify": "pari al 5, 10, 15 per cento a seconda che la velocità dedotta risulti"
+  },
+  "speeding": {
+    "article": "142",
+    "vigore": "2024-12-14",
+    "bands": [
+      {
+        "id": "c7",
+        "ref": "Art. 142 c.7",
+        "over_kmh_max": 10,
+        "min": 42,
+        "max": 173,
+        "points": 0,
+        "suspension": null,
+        "verify": "di non oltre 10 km/h, è soggetto alla sanzione amministrativa del pagamento di una somma da € 42 a € 173"
+      },
+      {
+        "id": "c8",
+        "ref": "Art. 142 c.8",
+        "over_kmh_max": 40,
+        "min": 173,
+        "max": 694,
+        "points": 3,
+        "suspension": null,
+        "verify": "di oltre 10 km/h e di non oltre 40 km/h i limiti massimi di velocità è soggetto alla sanzione amministrativa del pagamento di una somma da € 173 a € 694"
+      },
+      {
+        "id": "c9",
+        "ref": "Art. 142 c.9",
+        "over_kmh_max": 60,
+        "min": 543,
+        "max": 2170,
+        "points": 6,
+        "suspension": {
+          "from_months": 1,
+          "to_months": 3
+        },
+        "verify": "di oltre 40 km/h ma di non oltre 60 km/h i limiti massimi di velocità è soggetto alla sanzione amministrativa del pagamento di una somma da € 543 a € 2.170. Dalla violazione consegue la sanzione amministrativa accessoria della sospensione della patente di guida da uno a tre mesi"
+      },
+      {
+        "id": "c9bis",
+        "ref": "Art. 142 c.9-bis",
+        "over_kmh_max": null,
+        "min": 845,
+        "max": 3382,
+        "points": 10,
+        "suspension": {
+          "from_months": 6,
+          "to_months": 12
+        },
+        "verify": "di oltre 60 km/h i limiti massimi di velocità è soggetto alla sanzione amministrativa del pagamento di una somma da € 845 a € 3.382. Dalla violazione consegue la sanzione amministrativa accessoria della sospensione della patente di guida da sei a dodici mesi"
+      }
+    ],
+    "repeat_in_town_c8": {
+      "ref": "Art. 142 c.8, secondo periodo (L. 25 novembre 2024 n. 177)",
+      "min": 220,
+      "max": 880,
+      "suspension_days": {
+        "from": 15,
+        "to": 30
+      },
+      "verify": "all'interno del centro abitato e per almeno due volte nell'arco di un anno, si applicano la sanzione amministrativa del pagamento di una somma da euro 220 a euro 880 e la sanzione amministrativa accessoria della sospensione della patente di guida da quindici a trenta giorni"
+    },
+    "repeat_two_years": {
+      "ref": "Art. 142 c.12",
+      "c9_suspension_months": {
+        "from": 8,
+        "to": 18
+      },
+      "c9bis": "revoca",
+      "verify": "la sanzione amministrativa accessoria è della sospensione della patente da otto a diciotto mesi"
+    },
+    "heavy_vehicles_doubling": {
+      "ref": "Art. 142 c.11",
+      "categories": [
+        "b",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "l"
+      ],
+      "factor": 2,
+      "verify": "lettere b), e), f), g), h), i) e l) le sanzioni amministrative pecuniarie e quelle accessorie ivi previste sono raddoppiate"
+    },
+    "same_hour_same_body": {
+      "ref": "Art. 142 c.6-ter",
+      "rule": "più violazioni dello stesso veicolo, stesso ente, entro un'ora: sanzione della violazione più grave aumentata di un terzo, se più favorevole",
+      "verify": "in un periodo di tempo non superiore a un'ora, si applicano, se più favorevoli, le sanzioni amministrative previste per la violazione più grave aumentate di un terzo"
+    },
+    "plurime_un_ora": {
+      "ref": "Art. 142 c.6-ter CdS",
+      "factor": 1.3333333333333333,
+      "minutes": 60,
+      "verify": "in un periodo di tempo non superiore a un'ora, si applicano, se più favorevoli, le sanzioni amministrative previste per la violazione più grave aumentate di un terzo"
+    }
+  },
+  "night_surcharge": {
+    "ref": "Art. 195 c.2-bis",
+    "article": "195",
+    "factor": 1.3333333333333333,
+    "from_hour": 22,
+    "to_hour": 7,
+    "applies_to_articles": [
+      "141",
+      "142",
+      "145",
+      "146",
+      "149",
+      "154",
+      "174",
+      "176 c.19-20",
+      "178"
+    ],
+    "verify": "sono aumentate di un terzo quando la violazione è commessa dopo le ore 22 e prima delle ore 7"
+  },
+  "payment": {
+    "article": "202",
+    "ref": "Art. 202 c.1",
+    "within_days_minimum": 60,
+    "reduced_within_days": 5,
+    "reduction": 0.3,
+    "reduction_excluded_if": [
+      "sospensione della patente",
+      "confisca del veicolo"
+    ],
+    "verify": "Tale somma è ridotta del 30 per cento se il pagamento è effettuato entro cinque giorni dalla contestazione o dalla notificazione. La riduzione di cui al periodo precedente non si applica alle violazioni del presente codice per cui è prevista la sanzione accessoria della confisca del veicolo"
+  },
+  "unpaid": {
+    "article": "203",
+    "ref": "Art. 203 c.3",
+    "rule": "senza pagamento né ricorso nei termini, il verbale diventa titolo esecutivo per la metà del massimo edittale più le spese di procedimento",
+    "fraction_of_max": 0.5,
+    "verify": "costituisce titolo esecutivo per una somma pari alla metà del massimo della sanzione amministrativa edittale"
+  },
+  "notification": {
+    "article": "201",
+    "ref": "Art. 201 c.1",
+    "days": 90,
+    "verify": "entro novanta giorni dall'accertamento, essere notificato",
+    "days_abroad": 360,
+    "abroad": {
+      "article": "201",
+      "ref": "Art. 201 c.1, ultimo periodo",
+      "verify": "Per i residenti all'estero la notifica deve essere effettuata entro trecentosessanta giorni dall'accertamento"
+    }
+  },
+  "appeal": {
+    "prefetto": {
+      "article": "203",
+      "ref": "Art. 203 c.1",
+      "days": 60,
+      "verify": "nel termine di giorni sessanta dalla contestazione o dalla notificazione"
+    },
+    "giudice_di_pace": {
+      "article": "dlgs150art7",
+      "ref": "Art. 204-bis CdS e art. 7 c.3 D.Lgs. 1° settembre 2011 n. 150",
+      "days": 30,
+      "days_abroad": 60,
+      "verify": "entro trenta giorni dalla data di contestazione della violazione o di notificazione del verbale di accertamento, ovvero entro sessanta giorni se il ricorrente risiede all'estero"
+    }
+  },
+  "points": {
+    "article": "tabella",
+    "ref": "Tabella dei punteggi previsti all'art. 126-bis (in vigore dal 12-4-2025)",
+    "initial": 20,
+    "max_simultaneous": 15,
+    "max_simultaneous_ref": "Art. 126-bis c.1-bis",
+    "neopatentato_doubling": {
+      "years": 3,
+      "issued_after": "2003-10-01",
+      "factor": 2,
+      "verify": "sono raddoppiati qualora le violazioni siano commesse entro i primi tre anni dal rilascio"
+    },
+    "recovery_course": {
+      "points": 6,
+      "points_professional": 9,
+      "ref": "Art. 126-bis c.4",
+      "article": "126bis",
+      "verify": "consente di riacquistare sei punti"
+    },
+    "recovery_two_years": {
+      "ref": "Art. 126-bis c.5",
+      "article": "126bis",
+      "verify": "la mancanza, per il periodo di due anni, di violazioni di una norma di comportamento da cui derivi la decurtazione del punteggio, determina l'attribuzione del completo punteggio iniziale"
+    },
+    "bonus": {
+      "ref": "Art. 126-bis c.5, secondo periodo",
+      "points": 2,
+      "max": 10,
+      "article": "126bis",
+      "verify": "determina l'attribuzione di un credito di due punti, fino a un massimo di dieci punti"
+    }
+  },
+  "other_violations": [
+    {
+      "id": "cellulare",
+      "ref": "Art. 173 c.3-bis",
+      "article": "173",
+      "min": 250,
+      "max": 1000,
+      "points": 5,
+      "suspension_days": {
+        "from": 15,
+        "to": 60
+      },
+      "repeat": {
+        "within_years": 2,
+        "min": 350,
+        "max": 1400,
+        "points": 10,
+        "suspension_months": {
+          "from": 1,
+          "to": 3
+        }
+      },
+      "verify": "da euro 250 a euro 1.000 e alla sanzione amministrativa accessoria della sospensione della patente di guida da quindici giorni a due mesi"
+    },
+    {
+      "id": "cintura",
+      "ref": "Art. 172 c.10",
+      "article": "172",
+      "min": 83,
+      "max": 332,
+      "points": 5,
+      "verify": "è soggetto alla sanzione amministrativa del pagamento di una somma ((da € 83 a € 332))"
+    },
+    {
+      "id": "semaforo_rosso",
+      "ref": "Art. 146 c.3",
+      "article": "146",
+      "min": 167,
+      "max": 665,
+      "points": 6,
+      "night": true,
+      "verify": "vietino la marcia stessa, è soggetto alla sanzione amministrativa del pagamento di una somma ((da € 167 a € 665))"
+    },
+    {
+      "id": "segnaletica",
+      "ref": "Art. 146 c.2",
+      "article": "146",
+      "min": 42,
+      "max": 173,
+      "points": 2,
+      "night": true,
+      "verify": "è soggetto alla sanzione amministrativa del pagamento di una somma da € 42 a € 173. Sono fatte salve"
+    },
+    {
+      "id": "divieto_sosta_comunale",
+      "ref": "Art. 7 c.14",
+      "article": "7",
+      "min": 42,
+      "max": 173,
+      "points": 0,
+      "verify": "Chiunque viola gli altri obblighi, divieti o limitazioni previsti nel presente articolo, è soggetto alla sanzione amministrativa del pagamento di una somma da € 42 a € 173"
+    },
+    {
+      "id": "ztl_corsie",
+      "ref": "Art. 7 c.14, secondo periodo",
+      "article": "7",
+      "min": 83,
+      "max": 332,
+      "points": 0,
+      "verify": "nelle aree pedonali e nelle zone a traffico limitato è soggetta alla sanzione amministrativa del pagamento di una somma da € 83 a € 332"
+    },
+    {
+      "id": "sosta_vietata_158",
+      "ref": "Art. 158 c.5",
+      "article": "158",
+      "min": 87,
+      "max": 344,
+      "min_moto": 41,
+      "max_moto": 168,
+      "points": 0,
+      "verify": "da euro 41 a euro 168 per i ciclomotori e i motoveicoli a due ruote e da euro 87 a euro 344 per i restanti veicoli",
+      "casi": "c.1 lett. a)-h-ter) e c.2 lett. i): marciapiedi, attraversamenti pedonali, piste ciclabili, curve, gallerie, spazi di ricarica, aree pedonali"
+    },
+    {
+      "id": "alcol_05_08",
+      "ref": "Art. 186 c.2 lett. a)",
+      "article": "186",
+      "min": 543,
+      "max": 2170,
+      "points": 10,
+      "suspension_months": {
+        "from": 3,
+        "to": 6
+      },
+      "verify": "da € 543 a € 2.170, qualora sia stato accertato un valore corrispondente ad un tasso alcolemico superiore a 0,5 e non superiore a 0,8 grammi per litro"
+    },
+    {
+      "id": "autostrada_contromano_retromarcia",
+      "ref": "Art. 176 c.20 (c.1 lett. b)",
+      "night": true,
+      "article": "176",
+      "min": 430,
+      "max": 1731,
+      "points": 10,
+      "verify": "è soggetto alla sanzione amministrativa del pagamento di una somma da € 430 a € 1.731"
+    },
+    {
+      "id": "sosta_158_5bis",
+      "ref": "Art. 158 c.5-bis (c.2 lett. d)",
+      "article": "158",
+      "min": 165,
+      "max": 660,
+      "min_moto": 87,
+      "max_moto": 328,
+      "points": 2,
+      "verify": "da euro 87 a euro 328 per i ciclomotori e i motoveicoli a due ruote e da euro 165 a euro 660 per i restanti veicoli",
+      "casi": "c.1 lett. f) e c.2 lett. d) e h): incroci, fermate bus e taxi, corsie riservate ai mezzi pubblici (2 punti per le lettere d e h)"
+    },
+    {
+      "id": "sosta_158_4bis",
+      "ref": "Art. 158 c.4-bis",
+      "article": "158",
+      "min": 330,
+      "max": 990,
+      "min_moto": 165,
+      "max_moto": 660,
+      "points": 4,
+      "casi": "c.2 lett. g): spazi riservati ai veicoli delle persone invalide e relativi scivoli",
+      "verify": "da euro 165 a euro 660 per i ciclomotori e i motoveicoli a due ruote e da euro 330 a euro 990 per i restanti veicoli"
+    },
+    {
+      "id": "sosta_158_c6",
+      "ref": "Art. 158 c.6",
+      "article": "158",
+      "min": 42,
+      "max": 173,
+      "min_moto": 25,
+      "max_moto": 100,
+      "points": 0,
+      "verify": "da € 25 a € 100 per i ciclomotori e i motoveicoli a due ruote e da € 42 a € 173 per i restanti veicoli",
+      "casi": "altre disposizioni: passi carrabili, seconda fila, banchine, ZTL per i non autorizzati"
+    }
+  ],
+  "sources": {
+    "cds142": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art142",
+      "label": {
+        "it": "Codice della Strada, art. 142 (Limiti di velocità), testo vigente su Normattiva",
+        "en": "Italian Highway Code, article 142 (speed limits), current text on Normattiva"
+      }
+    },
+    "tabella": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art126bis",
+      "label": {
+        "it": "Tabella dei punteggi previsti all'art. 126-bis CdS (Normattiva)",
+        "en": "Points table of article 126-bis of the Italian Highway Code (Normattiva)"
+      }
+    },
+    "cds195": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art195",
+      "label": {
+        "it": "Codice della Strada, art. 195 (maggiorazione notturna, aggiornamento biennale e sospensione fino al 2026)",
+        "en": "Highway Code, article 195 (night-time surcharge, two-yearly update suspended until 2026)"
+      }
+    },
+    "cds201": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art201",
+      "label": {
+        "it": "Codice della Strada, art. 201 (notifica entro 90 giorni)",
+        "en": "Highway Code, article 201 (service of the fine within 90 days)"
+      }
+    },
+    "cds202": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art202",
+      "label": {
+        "it": "Codice della Strada, art. 202 (pagamento in misura ridotta e sconto del 30 %)",
+        "en": "Highway Code, article 202 (reduced payment and the 30 % discount)"
+      }
+    },
+    "cds203": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art203",
+      "label": {
+        "it": "Codice della Strada, art. 203 (ricorso al prefetto, verbale non pagato)",
+        "en": "Highway Code, article 203 (appeal to the prefetto, unpaid fines)"
+      }
+    },
+    "reg345": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1992-12-16;495~art345",
+      "label": {
+        "it": "Regolamento di esecuzione del CdS, art. 345 (riduzione del 5 %, minimo 5 km/h)",
+        "en": "Highway Code regulation, article 345 (5 % reduction, at least 5 km/h)"
+      }
+    },
+    "mitVelox": {
+      "url": "https://velox.mit.gov.it/dispositivi",
+      "label": {
+        "it": "MIT, Lista dispositivi di rilevamento della velocità (decreto direttoriale n. 367 del 29 settembre 2025)",
+        "en": "Transport ministry (MIT), national list of speed-measuring devices (directorial decree 367 of 29 September 2025)"
+      }
+    },
+    "mitNews": {
+      "url": "https://www.mit.gov.it/comunicazione/news/pubblicata-la-lista-nazionale-degli-autovelox",
+      "label": {
+        "it": "MIT, « Pubblicata la lista nazionale degli autovelox » (28 novembre 2025)",
+        "en": "MIT, “Pubblicata la lista nazionale degli autovelox” (28 November 2025)"
+      }
+    },
+    "istat": {
+      "url": "https://www.istat.it/classificazione/codici-dei-comuni-delle-province-e-delle-regioni/",
+      "label": {
+        "it": "ISTAT, Elenco dei comuni italiani (codici catastali), CC BY 4.0",
+        "en": "ISTAT, list of Italian municipalities (cadastral codes), CC BY 4.0"
+      }
+    },
+    "dlgs150": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-09-01;150~art7",
+      "label": {
+        "it": "D.Lgs. 150/2011, art. 7 (opposizione al giudice di pace: 30 giorni)",
+        "en": "Legislative decree 150/2011, article 7 (opposition before the giudice di pace: 30 days)"
+      }
+    },
+    "cds126bis": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art126bis",
+      "label": {
+        "it": "Codice della Strada, art. 126-bis (patente a punti, recupero e corsi)",
+        "en": "Highway Code, article 126-bis (points licence, recovery and courses)"
+      }
+    },
+    "cds117": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art117",
+      "label": {
+        "it": "Codice della Strada, art. 117 (limiti per i neopatentati: 100 e 90 km/h)",
+        "en": "Highway Code, article 117 (new drivers: 100 and 90 km/h)"
+      }
+    },
+    "cds173": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art173",
+      "label": {
+        "it": "Codice della Strada, art. 173 (uso del telefono alla guida)",
+        "en": "Highway Code, article 173 (phones while driving)"
+      }
+    },
+    "cds172": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art172",
+      "label": {
+        "it": "Codice della Strada, art. 172 (cinture di sicurezza)",
+        "en": "Highway Code, article 172 (seat belts)"
+      }
+    },
+    "cds158": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art158",
+      "label": {
+        "it": "Codice della Strada, art. 158 (divieto di fermata e di sosta)",
+        "en": "Highway Code, article 158 (no stopping and no parking)"
+      }
+    },
+    "cds7": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art7",
+      "label": {
+        "it": "Codice della Strada, art. 7 (sosta regolamentata dai comuni, ZTL)",
+        "en": "Highway Code, article 7 (municipal parking rules, ZTL)"
+      }
+    },
+    "cds146": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art146",
+      "label": {
+        "it": "Codice della Strada, art. 146 (segnaletica e semaforo rosso)",
+        "en": "Highway Code, article 146 (signs and red lights)"
+      }
+    },
+    "cds186": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art186",
+      "label": {
+        "it": "Codice della Strada, art. 186 (guida sotto l'influenza dell'alcol)",
+        "en": "Highway Code, article 186 (drink-driving)"
+      }
+    },
+    "cds176": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art176",
+      "label": {
+        "it": "Codice della Strada, art. 176 (comportamenti in autostrada)",
+        "en": "Highway Code, article 176 (conduct on motorways)"
+      }
+    },
+    "cds204bis": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art204bis",
+      "label": {
+        "it": "Codice della Strada, art. 204-bis (ricorso al giudice di pace)",
+        "en": "Highway Code, article 204-bis (appeal to the giudice di pace)"
+      }
+    },
+    "mitNoteLegali": {
+      "url": "https://www.mit.gov.it/note-legali",
+      "label": {
+        "it": "MIT, Note legali (contenuti con licenza CC BY 3.0)",
+        "en": "MIT, legal notes (content licensed CC BY 3.0)"
+      }
+    },
+    "cds204": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art204",
+      "label": {
+        "it": "Codice della Strada, art. 204 (ordinanza-ingiunzione del prefetto: almeno il doppio del minimo)",
+        "en": "Italian Highway Code, article 204 (prefetto's injunction: at least twice the minimum)"
+      }
+    },
+    "l177": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-11-25;177",
+      "label": {
+        "it": "Legge 25 novembre 2024 n. 177 (riforma del Codice della Strada)",
+        "en": "Law 177 of 25 November 2024 (Highway Code reform)"
+      }
+    },
+    "cds45": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art45",
+      "label": {
+        "it": "Codice della Strada, art. 45 (divieto dei dispositivi che segnalano gli autovelox, commi 9-bis e 9-ter)",
+        "en": "Italian Highway Code, article 45 (ban on devices that detect speed cameras, paragraphs 9-bis and 9-ter)"
+      }
+    }
+  },
+  "limits": {
+    "article": "142",
+    "ref": "Art. 142 c.1 CdS",
+    "autostrada": 130,
+    "extraurbana_principale": 110,
+    "extraurbana_secondaria": 90,
+    "urbana": 50,
+    "urbana_max_elevabile": 70,
+    "autostrada_max_elevabile": 150,
+    "pioggia": {
+      "autostrada": 110,
+      "extraurbana_principale": 90,
+      "verify": "la velocità massima non può superare i 110 km/h per le autostrade ed i 90 km/h per le strade extraurbane principali"
+    },
+    "verify": "la velocità massima non può superare i 130 km/h per le autostrade, i 110 km/h per le strade extraurbane principali, i 90 km/h per le strade extraurbane secondarie e per le strade extraurbane locali, ed i 50 km/h per le strade nei centri abitati",
+    "neopatentati": {
+      "article": "117",
+      "ref": "Art. 117 c.2 CdS",
+      "years": 3,
+      "autostrada": 100,
+      "extraurbana_principale": 90,
+      "verify": "non è consentito il superamento della velocità di 100 km/h per le autostrade e di 90 km/h per le strade extraurbane principali"
+    }
+  }
+}

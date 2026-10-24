@@ -1,0 +1,2213 @@
+{
+ "meta": {
+  "fonte": "Ministero delle infrastrutture e dei trasporti, Lista dispositivi di rilevamento della velocità",
+  "fonte_url": "https://velox.mit.gov.it/dispositivi",
+  "licenza": "CC BY 3.0 IT (Note legali mit.gov.it)",
+  "licenza_url": "https://creativecommons.org/licenses/by/3.0/it/legalcode",
+  "base_giuridica": "Decreto direttoriale MIT n. 367 del 29 settembre 2025, art. 1 c. 3-4 ; decreto direttoriale n. 305 del 18 agosto 2025, art. 5 c. 2",
+  "origine": "wayback",
+  "catturato_il": "2026-02-22T10:29:50Z",
+  "wayback_url": "https://web.archive.org/web/20260222102950/https://velox.mit.gov.it/dispositivi/data?draw=2&columns%5B0%5D%5Bdata%5D=codice_accertatore&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=denominazione_accertatore&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=codice_catastale_accertatore&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=n_decreto&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=data_decreto&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=tipo_dispositivo&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=marca_dispositivo&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=modello_dispositivo&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=versione_dispositivo&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=matricola_dispositivo&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=note&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=created_at&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&order%5B0%5D%5Bname%5D=&start=0&length=-1&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1764417074108",
+  "ultima_comunicazione": "2026-02-21 11:54:28",
+  "dispositivi_totali": 3896,
+  "dispositivi_abbinati": 3174,
+  "dispositivi_altri_organi": 722,
+  "comuni_con_dispositivi": 1503,
+  "abbinamento_comune": {
+   "codice": 2754,
+   "provincia": 278,
+   "codici_multipli": 19,
+   "nome": 123
+  },
+  "per_categoria": {
+   "totale": 3896,
+   "segnalati_non_attivi": 27,
+   "non_precisato": 1146,
+   "mobile": 1579,
+   "fisso": 602,
+   "velocita_media": 409,
+   "fisso_mobile": 160
+  },
+  "generato_il": "2026-10-24",
+  "avvertenza": "Il registro elenca gli apparecchi dichiarati da ciascun organo di polizia (marca, modello, decreto di approvazione, matricola). La posizione esatta compare solo quando l'organo l'ha scritta nelle note.",
+  "comuni_istat": 7896,
+  "province": 107
+ },
+ "italia": {
+  "totale": 3896,
+  "categorie": {
+   "totale": 3896,
+   "segnalati_non_attivi": 27,
+   "non_precisato": 1146,
+   "mobile": 1579,
+   "fisso": 602,
+   "velocita_media": 409,
+   "fisso_mobile": 160
+  },
+  "polizia_stradale": 606,
+  "altri_senza_comune": 116,
+  "provinciali": 278,
+  "comuni": 1503,
+  "decreti_distinti": 414,
+  "decreti_top": [
+   [
+    "3248",
+    592
+   ],
+   [
+    "3758",
+    409
+   ],
+   [
+    "1824",
+    270
+   ],
+   [
+    "20923",
+    216
+   ],
+   [
+    "242",
+    205
+   ],
+   [
+    "342",
+    117
+   ],
+   [
+    "305",
+    99
+   ],
+   [
+    "3999",
+    90
+   ]
+  ],
+  "anni_decreto": {
+   "1989": 18,
+   "1991": 1,
+   "1992": 1,
+   "1993": 35,
+   "1995": 1,
+   "1997": 36,
+   "1998": 2,
+   "2000": 262,
+   "2002": 1,
+   "2003": 49,
+   "2004": 109,
+   "2005": 30,
+   "2006": 23,
+   "2007": 212,
+   "2008": 24,
+   "2009": 2,
+   "2010": 28,
+   "2011": 659,
+   "2012": 31,
+   "2013": 10,
+   "2014": 489,
+   "2015": 27,
+   "2016": 131,
+   "2017": 141,
+   "2018": 338,
+   "2019": 7,
+   "2020": 54,
+   "2021": 450,
+   "2022": 9,
+   "2023": 166,
+   "2024": 132,
+   "2025": 136,
+   "2026": 1
+  }
+ },
+ "regioni": [
+  {
+   "regione": "Lombardia",
+   "comuni": 299,
+   "totale": 528,
+   "segnalati_non_attivi": 9,
+   "mobile": 259,
+   "non_precisato": 102,
+   "fisso": 109,
+   "fisso_mobile": 14,
+   "velocita_media": 44
+  },
+  {
+   "regione": "Veneto",
+   "comuni": 222,
+   "totale": 428,
+   "segnalati_non_attivi": 1,
+   "fisso_mobile": 20,
+   "mobile": 228,
+   "fisso": 107,
+   "non_precisato": 71,
+   "velocita_media": 2
+  },
+  {
+   "regione": "Emilia-Romagna",
+   "comuni": 120,
+   "totale": 408,
+   "segnalati_non_attivi": 5,
+   "non_precisato": 88,
+   "mobile": 146,
+   "fisso": 132,
+   "fisso_mobile": 16,
+   "velocita_media": 26
+  },
+  {
+   "regione": "Piemonte",
+   "comuni": 174,
+   "totale": 386,
+   "segnalati_non_attivi": 1,
+   "mobile": 153,
+   "fisso_mobile": 16,
+   "non_precisato": 133,
+   "fisso": 49,
+   "velocita_media": 35
+  },
+  {
+   "regione": "Toscana",
+   "comuni": 111,
+   "totale": 283,
+   "segnalati_non_attivi": 0,
+   "fisso_mobile": 15,
+   "non_precisato": 115,
+   "mobile": 102,
+   "fisso": 35,
+   "velocita_media": 16
+  },
+  {
+   "regione": "Lazio",
+   "comuni": 59,
+   "totale": 191,
+   "segnalati_non_attivi": 1,
+   "non_precisato": 77,
+   "mobile": 60,
+   "fisso": 31,
+   "velocita_media": 23
+  },
+  {
+   "regione": "Liguria",
+   "comuni": 48,
+   "totale": 135,
+   "segnalati_non_attivi": 5,
+   "mobile": 34,
+   "non_precisato": 29,
+   "fisso": 51,
+   "fisso_mobile": 5,
+   "velocita_media": 16
+  },
+  {
+   "regione": "Friuli-Venezia Giulia",
+   "comuni": 66,
+   "totale": 115,
+   "segnalati_non_attivi": 0,
+   "mobile": 72,
+   "non_precisato": 28,
+   "velocita_media": 10,
+   "fisso_mobile": 2,
+   "fisso": 3
+  },
+  {
+   "regione": "Sicilia",
+   "comuni": 68,
+   "totale": 111,
+   "segnalati_non_attivi": 0,
+   "mobile": 37,
+   "non_precisato": 55,
+   "fisso_mobile": 7,
+   "fisso": 12
+  },
+  {
+   "regione": "Marche",
+   "comuni": 59,
+   "totale": 109,
+   "segnalati_non_attivi": 0,
+   "fisso": 18,
+   "mobile": 46,
+   "non_precisato": 33,
+   "fisso_mobile": 9,
+   "velocita_media": 3
+  },
+  {
+   "regione": "Trentino-Alto Adige/Südtirol",
+   "comuni": 51,
+   "totale": 93,
+   "segnalati_non_attivi": 0,
+   "mobile": 66,
+   "non_precisato": 17,
+   "fisso": 6,
+   "fisso_mobile": 4
+  },
+  {
+   "regione": "Abruzzo",
+   "comuni": 41,
+   "totale": 81,
+   "segnalati_non_attivi": 0,
+   "mobile": 46,
+   "fisso_mobile": 13,
+   "fisso": 9,
+   "non_precisato": 13
+  },
+  {
+   "regione": "Umbria",
+   "comuni": 38,
+   "totale": 64,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 34,
+   "fisso_mobile": 6,
+   "fisso": 4,
+   "mobile": 16,
+   "velocita_media": 4
+  },
+  {
+   "regione": "Campania",
+   "comuni": 37,
+   "totale": 59,
+   "segnalati_non_attivi": 0,
+   "fisso": 9,
+   "non_precisato": 30,
+   "mobile": 8,
+   "velocita_media": 9,
+   "fisso_mobile": 3
+  },
+  {
+   "regione": "Puglia",
+   "comuni": 37,
+   "totale": 55,
+   "segnalati_non_attivi": 4,
+   "non_precisato": 21,
+   "mobile": 20,
+   "fisso_mobile": 6,
+   "fisso": 6,
+   "velocita_media": 2
+  },
+  {
+   "regione": "Calabria",
+   "comuni": 25,
+   "totale": 48,
+   "segnalati_non_attivi": 0,
+   "mobile": 4,
+   "velocita_media": 23,
+   "non_precisato": 7,
+   "fisso": 9,
+   "fisso_mobile": 5
+  },
+  {
+   "regione": "Sardegna",
+   "comuni": 19,
+   "totale": 31,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 12,
+   "mobile": 13,
+   "fisso": 4,
+   "fisso_mobile": 2
+  },
+  {
+   "regione": "Basilicata",
+   "comuni": 9,
+   "totale": 17,
+   "segnalati_non_attivi": 0,
+   "velocita_media": 3,
+   "mobile": 3,
+   "fisso": 2,
+   "non_precisato": 9
+  },
+  {
+   "regione": "Molise",
+   "comuni": 10,
+   "totale": 16,
+   "segnalati_non_attivi": 0,
+   "mobile": 6,
+   "non_precisato": 4,
+   "fisso_mobile": 3,
+   "fisso": 3
+  },
+  {
+   "regione": "Valle d'Aosta/Vallée d'Aoste",
+   "comuni": 10,
+   "totale": 16,
+   "segnalati_non_attivi": 1,
+   "mobile": 5,
+   "non_precisato": 9,
+   "fisso_mobile": 2
+  }
+ ],
+ "province": [
+  {
+   "sigla": "TO",
+   "provincia": "Torino",
+   "regione": "Piemonte",
+   "comuni": 55,
+   "totale": 119,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 43,
+   "mobile": 42,
+   "fisso": 27,
+   "fisso_mobile": 3,
+   "velocita_media": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "RM",
+   "provincia": "Roma",
+   "regione": "Lazio",
+   "comuni": 20,
+   "organi_provinciali": 26,
+   "totale": 115,
+   "segnalati_non_attivi": 1,
+   "mobile": 36,
+   "non_precisato": 49,
+   "fisso": 22,
+   "velocita_media": 8,
+   "provinciali": 26
+  },
+  {
+   "sigla": "MI",
+   "provincia": "Milano",
+   "regione": "Lombardia",
+   "comuni": 41,
+   "organi_provinciali": 31,
+   "totale": 113,
+   "segnalati_non_attivi": 8,
+   "mobile": 36,
+   "fisso": 20,
+   "non_precisato": 24,
+   "fisso_mobile": 2,
+   "velocita_media": 31,
+   "provinciali": 31
+  },
+  {
+   "sigla": "BO",
+   "provincia": "Bologna",
+   "regione": "Emilia-Romagna",
+   "comuni": 25,
+   "organi_provinciali": 17,
+   "totale": 102,
+   "segnalati_non_attivi": 0,
+   "fisso": 31,
+   "mobile": 39,
+   "non_precisato": 31,
+   "fisso_mobile": 1,
+   "provinciali": 17
+  },
+  {
+   "sigla": "FI",
+   "provincia": "Firenze",
+   "regione": "Toscana",
+   "comuni": 20,
+   "organi_provinciali": 7,
+   "totale": 101,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 43,
+   "fisso_mobile": 11,
+   "mobile": 26,
+   "fisso": 21,
+   "provinciali": 7
+  },
+  {
+   "sigla": "PD",
+   "provincia": "Padova",
+   "regione": "Veneto",
+   "comuni": 45,
+   "totale": 91,
+   "segnalati_non_attivi": 0,
+   "fisso_mobile": 5,
+   "mobile": 36,
+   "fisso": 33,
+   "non_precisato": 17,
+   "provinciali": 0
+  },
+  {
+   "sigla": "BS",
+   "provincia": "Brescia",
+   "regione": "Lombardia",
+   "comuni": 46,
+   "organi_provinciali": 22,
+   "totale": 91,
+   "segnalati_non_attivi": 0,
+   "mobile": 49,
+   "non_precisato": 9,
+   "fisso": 25,
+   "fisso_mobile": 3,
+   "velocita_media": 5,
+   "provinciali": 22
+  },
+  {
+   "sigla": "MN",
+   "provincia": "Mantova",
+   "regione": "Lombardia",
+   "comuni": 35,
+   "organi_provinciali": 4,
+   "totale": 76,
+   "segnalati_non_attivi": 1,
+   "non_precisato": 21,
+   "fisso": 32,
+   "mobile": 23,
+   "provinciali": 4
+  },
+  {
+   "sigla": "VE",
+   "provincia": "Venezia",
+   "regione": "Veneto",
+   "comuni": 25,
+   "organi_provinciali": 1,
+   "totale": 71,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 12,
+   "mobile": 43,
+   "fisso": 12,
+   "fisso_mobile": 4,
+   "provinciali": 1
+  },
+  {
+   "sigla": "TV",
+   "provincia": "Treviso",
+   "regione": "Veneto",
+   "comuni": 45,
+   "totale": 66,
+   "segnalati_non_attivi": 0,
+   "mobile": 47,
+   "non_precisato": 14,
+   "fisso_mobile": 5,
+   "provinciali": 0
+  },
+  {
+   "sigla": "UD",
+   "provincia": "Udine",
+   "regione": "Friuli-Venezia Giulia",
+   "comuni": 34,
+   "totale": 63,
+   "segnalati_non_attivi": 0,
+   "mobile": 31,
+   "velocita_media": 10,
+   "non_precisato": 18,
+   "fisso_mobile": 1,
+   "fisso": 3,
+   "provinciali": 0
+  },
+  {
+   "sigla": "VI",
+   "provincia": "Vicenza",
+   "regione": "Veneto",
+   "comuni": 34,
+   "totale": 63,
+   "segnalati_non_attivi": 0,
+   "mobile": 55,
+   "fisso": 4,
+   "fisso_mobile": 2,
+   "non_precisato": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "AL",
+   "provincia": "Alessandria",
+   "regione": "Piemonte",
+   "comuni": 17,
+   "organi_provinciali": 32,
+   "totale": 61,
+   "segnalati_non_attivi": 0,
+   "mobile": 20,
+   "non_precisato": 35,
+   "velocita_media": 5,
+   "fisso": 1,
+   "provinciali": 32
+  },
+  {
+   "sigla": "CN",
+   "provincia": "Cuneo",
+   "regione": "Piemonte",
+   "comuni": 40,
+   "organi_provinciali": 1,
+   "totale": 61,
+   "segnalati_non_attivi": 1,
+   "fisso_mobile": 10,
+   "mobile": 22,
+   "non_precisato": 25,
+   "fisso": 3,
+   "velocita_media": 1,
+   "provinciali": 1
+  },
+  {
+   "sigla": "VR",
+   "provincia": "Verona",
+   "regione": "Veneto",
+   "comuni": 33,
+   "totale": 60,
+   "segnalati_non_attivi": 1,
+   "mobile": 35,
+   "fisso": 13,
+   "fisso_mobile": 2,
+   "non_precisato": 10,
+   "provinciali": 0
+  },
+  {
+   "sigla": "RO",
+   "provincia": "Rovigo",
+   "regione": "Veneto",
+   "comuni": 28,
+   "totale": 59,
+   "segnalati_non_attivi": 0,
+   "fisso": 40,
+   "fisso_mobile": 2,
+   "mobile": 9,
+   "non_precisato": 6,
+   "velocita_media": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "FE",
+   "provincia": "Ferrara",
+   "regione": "Emilia-Romagna",
+   "comuni": 12,
+   "organi_provinciali": 10,
+   "totale": 59,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 8,
+   "mobile": 23,
+   "fisso_mobile": 4,
+   "fisso": 14,
+   "velocita_media": 10,
+   "provinciali": 10
+  },
+  {
+   "sigla": "PV",
+   "provincia": "Pavia",
+   "regione": "Lombardia",
+   "comuni": 34,
+   "organi_provinciali": 19,
+   "totale": 59,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 11,
+   "mobile": 25,
+   "fisso": 15,
+   "velocita_media": 8,
+   "provinciali": 19
+  },
+  {
+   "sigla": "BZ",
+   "provincia": "Bolzano/Bozen",
+   "regione": "Trentino-Alto Adige/Südtirol",
+   "comuni": 31,
+   "totale": 58,
+   "segnalati_non_attivi": 0,
+   "mobile": 44,
+   "non_precisato": 10,
+   "fisso_mobile": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "VC",
+   "provincia": "Vercelli",
+   "regione": "Piemonte",
+   "comuni": 15,
+   "organi_provinciali": 17,
+   "totale": 53,
+   "segnalati_non_attivi": 0,
+   "mobile": 32,
+   "non_precisato": 4,
+   "velocita_media": 16,
+   "fisso": 1,
+   "provinciali": 17
+  },
+  {
+   "sigla": "RA",
+   "provincia": "Ravenna",
+   "regione": "Emilia-Romagna",
+   "comuni": 12,
+   "organi_provinciali": 15,
+   "totale": 52,
+   "segnalati_non_attivi": 0,
+   "fisso": 36,
+   "fisso_mobile": 3,
+   "mobile": 13,
+   "provinciali": 15
+  },
+  {
+   "sigla": "MO",
+   "provincia": "Modena",
+   "regione": "Emilia-Romagna",
+   "comuni": 15,
+   "totale": 46,
+   "segnalati_non_attivi": 5,
+   "mobile": 21,
+   "fisso_mobile": 3,
+   "fisso": 13,
+   "non_precisato": 9,
+   "provinciali": 0
+  },
+  {
+   "sigla": "GE",
+   "provincia": "Genova",
+   "regione": "Liguria",
+   "comuni": 12,
+   "totale": 43,
+   "segnalati_non_attivi": 0,
+   "mobile": 14,
+   "non_precisato": 5,
+   "fisso": 18,
+   "velocita_media": 4,
+   "fisso_mobile": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "RE",
+   "provincia": "Reggio nell'Emilia",
+   "regione": "Emilia-Romagna",
+   "comuni": 7,
+   "totale": 40,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 4,
+   "mobile": 9,
+   "fisso": 10,
+   "velocita_media": 16,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "BG",
+   "provincia": "Bergamo",
+   "regione": "Lombardia",
+   "comuni": 31,
+   "totale": 38,
+   "segnalati_non_attivi": 0,
+   "fisso": 5,
+   "mobile": 30,
+   "non_precisato": 3,
+   "provinciali": 0
+  },
+  {
+   "sigla": "SV",
+   "provincia": "Savona",
+   "regione": "Liguria",
+   "comuni": 15,
+   "organi_provinciali": 14,
+   "totale": 37,
+   "segnalati_non_attivi": 0,
+   "mobile": 9,
+   "non_precisato": 7,
+   "fisso": 19,
+   "fisso_mobile": 2,
+   "provinciali": 14
+  },
+  {
+   "sigla": "PC",
+   "provincia": "Piacenza",
+   "regione": "Emilia-Romagna",
+   "comuni": 19,
+   "organi_provinciali": 4,
+   "totale": 37,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 11,
+   "fisso_mobile": 2,
+   "mobile": 11,
+   "fisso": 13,
+   "provinciali": 4
+  },
+  {
+   "sigla": "PG",
+   "provincia": "Perugia",
+   "regione": "Umbria",
+   "comuni": 26,
+   "totale": 37,
+   "segnalati_non_attivi": 0,
+   "fisso": 4,
+   "fisso_mobile": 4,
+   "mobile": 12,
+   "non_precisato": 15,
+   "velocita_media": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "AT",
+   "provincia": "Asti",
+   "regione": "Piemonte",
+   "comuni": 8,
+   "organi_provinciali": 12,
+   "totale": 37,
+   "segnalati_non_attivi": 0,
+   "fisso": 15,
+   "mobile": 10,
+   "velocita_media": 9,
+   "non_precisato": 2,
+   "fisso_mobile": 1,
+   "provinciali": 12
+  },
+  {
+   "sigla": "CR",
+   "provincia": "Cremona",
+   "regione": "Lombardia",
+   "comuni": 22,
+   "organi_provinciali": 6,
+   "totale": 37,
+   "segnalati_non_attivi": 0,
+   "fisso": 8,
+   "mobile": 14,
+   "non_precisato": 14,
+   "fisso_mobile": 1,
+   "provinciali": 6
+  },
+  {
+   "sigla": "VA",
+   "provincia": "Varese",
+   "regione": "Lombardia",
+   "comuni": 26,
+   "totale": 36,
+   "segnalati_non_attivi": 0,
+   "fisso_mobile": 2,
+   "mobile": 21,
+   "fisso": 2,
+   "non_precisato": 11,
+   "provinciali": 0
+  },
+  {
+   "sigla": "TN",
+   "provincia": "Trento",
+   "regione": "Trentino-Alto Adige/Südtirol",
+   "comuni": 20,
+   "totale": 35,
+   "segnalati_non_attivi": 0,
+   "mobile": 22,
+   "non_precisato": 7,
+   "fisso": 6,
+   "provinciali": 0
+  },
+  {
+   "sigla": "PN",
+   "provincia": "Pordenone",
+   "regione": "Friuli-Venezia Giulia",
+   "comuni": 24,
+   "totale": 35,
+   "segnalati_non_attivi": 0,
+   "mobile": 31,
+   "non_precisato": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CS",
+   "provincia": "Cosenza",
+   "regione": "Calabria",
+   "comuni": 16,
+   "totale": 34,
+   "segnalati_non_attivi": 0,
+   "mobile": 2,
+   "velocita_media": 21,
+   "fisso": 7,
+   "non_precisato": 3,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CH",
+   "provincia": "Chieti",
+   "regione": "Abruzzo",
+   "comuni": 15,
+   "totale": 34,
+   "segnalati_non_attivi": 0,
+   "mobile": 24,
+   "fisso_mobile": 6,
+   "non_precisato": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "LU",
+   "provincia": "Lucca",
+   "regione": "Toscana",
+   "comuni": 16,
+   "organi_provinciali": 1,
+   "totale": 34,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 7,
+   "mobile": 22,
+   "fisso_mobile": 2,
+   "fisso": 3,
+   "provinciali": 1
+  },
+  {
+   "sigla": "GR",
+   "provincia": "Grosseto",
+   "regione": "Toscana",
+   "comuni": 13,
+   "organi_provinciali": 9,
+   "totale": 33,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 20,
+   "mobile": 13,
+   "provinciali": 9
+  },
+  {
+   "sigla": "AN",
+   "provincia": "Ancona",
+   "regione": "Marche",
+   "comuni": 19,
+   "totale": 32,
+   "segnalati_non_attivi": 0,
+   "fisso": 7,
+   "mobile": 13,
+   "non_precisato": 10,
+   "velocita_media": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "MB",
+   "provincia": "Monza e della Brianza",
+   "regione": "Lombardia",
+   "comuni": 27,
+   "totale": 31,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 6,
+   "mobile": 22,
+   "fisso_mobile": 3,
+   "provinciali": 0
+  },
+  {
+   "sigla": "MC",
+   "provincia": "Macerata",
+   "regione": "Marche",
+   "comuni": 15,
+   "totale": 31,
+   "segnalati_non_attivi": 0,
+   "fisso_mobile": 3,
+   "mobile": 13,
+   "non_precisato": 12,
+   "fisso": 3,
+   "provinciali": 0
+  },
+  {
+   "sigla": "LT",
+   "provincia": "Latina",
+   "regione": "Lazio",
+   "comuni": 15,
+   "organi_provinciali": 3,
+   "totale": 31,
+   "segnalati_non_attivi": 0,
+   "mobile": 8,
+   "fisso": 3,
+   "non_precisato": 7,
+   "velocita_media": 13,
+   "provinciali": 3
+  },
+  {
+   "sigla": "IM",
+   "provincia": "Imperia",
+   "regione": "Liguria",
+   "comuni": 9,
+   "organi_provinciali": 3,
+   "totale": 30,
+   "segnalati_non_attivi": 5,
+   "mobile": 7,
+   "non_precisato": 6,
+   "fisso_mobile": 1,
+   "fisso": 6,
+   "velocita_media": 10,
+   "provinciali": 3
+  },
+  {
+   "sigla": "PA",
+   "provincia": "Palermo",
+   "regione": "Sicilia",
+   "comuni": 14,
+   "totale": 30,
+   "segnalati_non_attivi": 0,
+   "mobile": 12,
+   "fisso": 2,
+   "non_precisato": 16,
+   "provinciali": 0
+  },
+  {
+   "sigla": "VT",
+   "provincia": "Viterbo",
+   "regione": "Lazio",
+   "comuni": 12,
+   "totale": 29,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 14,
+   "mobile": 12,
+   "fisso": 1,
+   "velocita_media": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "PU",
+   "provincia": "Pesaro e Urbino",
+   "regione": "Marche",
+   "comuni": 15,
+   "totale": 28,
+   "segnalati_non_attivi": 0,
+   "fisso": 6,
+   "mobile": 12,
+   "non_precisato": 7,
+   "fisso_mobile": 2,
+   "velocita_media": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CT",
+   "provincia": "Catania",
+   "regione": "Sicilia",
+   "comuni": 19,
+   "totale": 27,
+   "segnalati_non_attivi": 0,
+   "mobile": 4,
+   "non_precisato": 13,
+   "fisso": 5,
+   "fisso_mobile": 5,
+   "provinciali": 0
+  },
+  {
+   "sigla": "TR",
+   "provincia": "Terni",
+   "regione": "Umbria",
+   "comuni": 12,
+   "totale": 27,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 19,
+   "fisso_mobile": 2,
+   "mobile": 4,
+   "velocita_media": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "SP",
+   "provincia": "La Spezia",
+   "regione": "Liguria",
+   "comuni": 12,
+   "totale": 25,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 11,
+   "mobile": 4,
+   "fisso": 8,
+   "velocita_media": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "NO",
+   "provincia": "Novara",
+   "regione": "Piemonte",
+   "comuni": 18,
+   "totale": 25,
+   "segnalati_non_attivi": 0,
+   "fisso_mobile": 2,
+   "mobile": 16,
+   "non_precisato": 7,
+   "provinciali": 0
+  },
+  {
+   "sigla": "FC",
+   "provincia": "Forlì-Cesena",
+   "regione": "Emilia-Romagna",
+   "comuni": 11,
+   "organi_provinciali": 5,
+   "totale": 25,
+   "segnalati_non_attivi": 0,
+   "mobile": 16,
+   "non_precisato": 4,
+   "fisso": 5,
+   "provinciali": 5
+  },
+  {
+   "sigla": "RN",
+   "provincia": "Rimini",
+   "regione": "Emilia-Romagna",
+   "comuni": 9,
+   "organi_provinciali": 1,
+   "totale": 24,
+   "segnalati_non_attivi": 0,
+   "fisso": 4,
+   "non_precisato": 11,
+   "mobile": 8,
+   "fisso_mobile": 1,
+   "provinciali": 1
+  },
+  {
+   "sigla": "PR",
+   "provincia": "Parma",
+   "regione": "Emilia-Romagna",
+   "comuni": 10,
+   "totale": 23,
+   "segnalati_non_attivi": 0,
+   "mobile": 6,
+   "fisso_mobile": 1,
+   "fisso": 6,
+   "non_precisato": 10,
+   "provinciali": 0
+  },
+  {
+   "sigla": "SI",
+   "provincia": "Siena",
+   "regione": "Toscana",
+   "comuni": 10,
+   "organi_provinciali": 2,
+   "totale": 23,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 9,
+   "mobile": 5,
+   "fisso": 1,
+   "velocita_media": 8,
+   "provinciali": 2
+  },
+  {
+   "sigla": "VB",
+   "provincia": "Verbano-Cusio-Ossola",
+   "regione": "Piemonte",
+   "comuni": 14,
+   "totale": 22,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 16,
+   "fisso": 2,
+   "mobile": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "LI",
+   "provincia": "Livorno",
+   "regione": "Toscana",
+   "comuni": 8,
+   "organi_provinciali": 5,
+   "totale": 19,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 11,
+   "fisso": 2,
+   "mobile": 2,
+   "velocita_media": 4,
+   "provinciali": 5
+  },
+  {
+   "sigla": "PE",
+   "provincia": "Pescara",
+   "regione": "Abruzzo",
+   "comuni": 11,
+   "totale": 19,
+   "segnalati_non_attivi": 0,
+   "fisso": 8,
+   "non_precisato": 5,
+   "mobile": 5,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CO",
+   "provincia": "Como",
+   "regione": "Lombardia",
+   "comuni": 15,
+   "totale": 18,
+   "segnalati_non_attivi": 0,
+   "mobile": 14,
+   "non_precisato": 2,
+   "fisso_mobile": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "AR",
+   "provincia": "Arezzo",
+   "regione": "Toscana",
+   "comuni": 12,
+   "organi_provinciali": 1,
+   "totale": 18,
+   "segnalati_non_attivi": 0,
+   "fisso_mobile": 2,
+   "non_precisato": 4,
+   "mobile": 12,
+   "provinciali": 1
+  },
+  {
+   "sigla": "BL",
+   "provincia": "Belluno",
+   "regione": "Veneto",
+   "comuni": 12,
+   "totale": 18,
+   "segnalati_non_attivi": 0,
+   "fisso": 5,
+   "mobile": 3,
+   "non_precisato": 10,
+   "provinciali": 0
+  },
+  {
+   "sigla": "ME",
+   "provincia": "Messina",
+   "regione": "Sicilia",
+   "comuni": 10,
+   "organi_provinciali": 2,
+   "totale": 18,
+   "segnalati_non_attivi": 0,
+   "fisso": 1,
+   "non_precisato": 12,
+   "mobile": 5,
+   "provinciali": 2
+  },
+  {
+   "sigla": "TE",
+   "provincia": "Teramo",
+   "regione": "Abruzzo",
+   "comuni": 10,
+   "organi_provinciali": 2,
+   "totale": 17,
+   "segnalati_non_attivi": 0,
+   "mobile": 10,
+   "non_precisato": 4,
+   "fisso_mobile": 2,
+   "fisso": 1,
+   "provinciali": 2
+  },
+  {
+   "sigla": "BN",
+   "provincia": "Benevento",
+   "regione": "Campania",
+   "comuni": 10,
+   "totale": 17,
+   "segnalati_non_attivi": 0,
+   "fisso": 7,
+   "non_precisato": 8,
+   "velocita_media": 1,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "MS",
+   "provincia": "Massa-Carrara",
+   "regione": "Toscana",
+   "comuni": 7,
+   "totale": 17,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 6,
+   "mobile": 4,
+   "fisso": 7,
+   "provinciali": 0
+  },
+  {
+   "sigla": "AO",
+   "provincia": "Valle d'Aosta/Vallée d'Aoste",
+   "regione": "Valle d'Aosta/Vallée d'Aoste",
+   "comuni": 10,
+   "totale": 16,
+   "segnalati_non_attivi": 1,
+   "mobile": 5,
+   "non_precisato": 9,
+   "fisso_mobile": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "BA",
+   "provincia": "Bari",
+   "regione": "Puglia",
+   "comuni": 7,
+   "organi_provinciali": 1,
+   "totale": 15,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 8,
+   "mobile": 7,
+   "provinciali": 1
+  },
+  {
+   "sigla": "SO",
+   "provincia": "Sondrio",
+   "regione": "Lombardia",
+   "comuni": 9,
+   "totale": 15,
+   "segnalati_non_attivi": 0,
+   "mobile": 11,
+   "fisso": 2,
+   "non_precisato": 1,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CE",
+   "provincia": "Caserta",
+   "regione": "Campania",
+   "comuni": 6,
+   "totale": 15,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 8,
+   "velocita_media": 4,
+   "mobile": 1,
+   "fisso": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "PT",
+   "provincia": "Pistoia",
+   "regione": "Toscana",
+   "comuni": 7,
+   "totale": 15,
+   "segnalati_non_attivi": 0,
+   "mobile": 5,
+   "non_precisato": 6,
+   "velocita_media": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "PI",
+   "provincia": "Pisa",
+   "regione": "Toscana",
+   "comuni": 11,
+   "totale": 14,
+   "segnalati_non_attivi": 0,
+   "mobile": 12,
+   "non_precisato": 1,
+   "fisso": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "TP",
+   "provincia": "Trapani",
+   "regione": "Sicilia",
+   "comuni": 9,
+   "totale": 14,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 6,
+   "mobile": 5,
+   "fisso": 2,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "SS",
+   "provincia": "Sassari",
+   "regione": "Sardegna",
+   "comuni": 5,
+   "totale": 14,
+   "segnalati_non_attivi": 0,
+   "mobile": 9,
+   "non_precisato": 1,
+   "fisso_mobile": 2,
+   "fisso": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "SA",
+   "provincia": "Salerno",
+   "regione": "Campania",
+   "comuni": 11,
+   "totale": 13,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 6,
+   "mobile": 5,
+   "fisso_mobile": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "FM",
+   "provincia": "Fermo",
+   "regione": "Marche",
+   "comuni": 9,
+   "totale": 13,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 4,
+   "mobile": 5,
+   "fisso_mobile": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "LC",
+   "provincia": "Lecco",
+   "regione": "Lombardia",
+   "comuni": 10,
+   "organi_provinciali": 1,
+   "totale": 12,
+   "segnalati_non_attivi": 0,
+   "mobile": 11,
+   "non_precisato": 1,
+   "provinciali": 1
+  },
+  {
+   "sigla": "IS",
+   "provincia": "Isernia",
+   "regione": "Molise",
+   "comuni": 6,
+   "totale": 11,
+   "segnalati_non_attivi": 0,
+   "mobile": 6,
+   "fisso": 3,
+   "fisso_mobile": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "AQ",
+   "provincia": "L'Aquila",
+   "regione": "Abruzzo",
+   "comuni": 5,
+   "totale": 11,
+   "segnalati_non_attivi": 0,
+   "mobile": 7,
+   "fisso_mobile": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "LE",
+   "provincia": "Lecce",
+   "regione": "Puglia",
+   "comuni": 8,
+   "totale": 11,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 7,
+   "mobile": 2,
+   "fisso": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "FG",
+   "provincia": "Foggia",
+   "regione": "Puglia",
+   "comuni": 7,
+   "totale": 11,
+   "segnalati_non_attivi": 4,
+   "fisso": 4,
+   "non_precisato": 4,
+   "fisso_mobile": 3,
+   "provinciali": 0
+  },
+  {
+   "sigla": "NA",
+   "provincia": "Napoli",
+   "regione": "Campania",
+   "comuni": 8,
+   "totale": 11,
+   "segnalati_non_attivi": 0,
+   "mobile": 2,
+   "velocita_media": 4,
+   "non_precisato": 5,
+   "provinciali": 0
+  },
+  {
+   "sigla": "RI",
+   "provincia": "Rieti",
+   "regione": "Lazio",
+   "comuni": 7,
+   "totale": 10,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 3,
+   "mobile": 3,
+   "fisso": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "PO",
+   "provincia": "Prato",
+   "regione": "Toscana",
+   "comuni": 7,
+   "organi_provinciali": 1,
+   "totale": 9,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 8,
+   "mobile": 1,
+   "provinciali": 1
+  },
+  {
+   "sigla": "TS",
+   "provincia": "Trieste",
+   "regione": "Friuli-Venezia Giulia",
+   "comuni": 3,
+   "totale": 9,
+   "segnalati_non_attivi": 0,
+   "mobile": 5,
+   "non_precisato": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "MT",
+   "provincia": "Matera",
+   "regione": "Basilicata",
+   "comuni": 4,
+   "totale": 9,
+   "segnalati_non_attivi": 0,
+   "velocita_media": 2,
+   "mobile": 1,
+   "fisso": 2,
+   "non_precisato": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "BI",
+   "provincia": "Biella",
+   "regione": "Piemonte",
+   "comuni": 7,
+   "totale": 8,
+   "segnalati_non_attivi": 0,
+   "mobile": 7,
+   "non_precisato": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "SU",
+   "provincia": "Sud Sardegna",
+   "regione": "Sardegna",
+   "comuni": 7,
+   "totale": 8,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 4,
+   "mobile": 3,
+   "fisso": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CA",
+   "provincia": "Cagliari",
+   "regione": "Sardegna",
+   "comuni": 6,
+   "totale": 8,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 6,
+   "mobile": 1,
+   "fisso": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "GO",
+   "provincia": "Gorizia",
+   "regione": "Friuli-Venezia Giulia",
+   "comuni": 5,
+   "totale": 8,
+   "segnalati_non_attivi": 0,
+   "mobile": 5,
+   "non_precisato": 2,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "PZ",
+   "provincia": "Potenza",
+   "regione": "Basilicata",
+   "comuni": 5,
+   "organi_provinciali": 1,
+   "totale": 8,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 5,
+   "velocita_media": 1,
+   "mobile": 2,
+   "provinciali": 1
+  },
+  {
+   "sigla": "SR",
+   "provincia": "Siracusa",
+   "regione": "Sicilia",
+   "comuni": 5,
+   "totale": 7,
+   "segnalati_non_attivi": 0,
+   "fisso_mobile": 1,
+   "mobile": 5,
+   "non_precisato": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "BR",
+   "provincia": "Brindisi",
+   "regione": "Puglia",
+   "comuni": 6,
+   "totale": 7,
+   "segnalati_non_attivi": 0,
+   "mobile": 4,
+   "fisso_mobile": 2,
+   "non_precisato": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "FR",
+   "provincia": "Frosinone",
+   "regione": "Lazio",
+   "comuni": 5,
+   "totale": 6,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 4,
+   "fisso": 1,
+   "mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CZ",
+   "provincia": "Catanzaro",
+   "regione": "Calabria",
+   "comuni": 5,
+   "totale": 6,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 2,
+   "fisso_mobile": 2,
+   "fisso": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "RG",
+   "provincia": "Ragusa",
+   "regione": "Sicilia",
+   "comuni": 4,
+   "totale": 6,
+   "segnalati_non_attivi": 0,
+   "mobile": 4,
+   "non_precisato": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "TA",
+   "provincia": "Taranto",
+   "regione": "Puglia",
+   "comuni": 5,
+   "totale": 6,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 1,
+   "velocita_media": 2,
+   "mobile": 3,
+   "provinciali": 0
+  },
+  {
+   "sigla": "RC",
+   "provincia": "Reggio Calabria",
+   "regione": "Calabria",
+   "comuni": 3,
+   "totale": 6,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 2,
+   "mobile": 2,
+   "fisso_mobile": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CL",
+   "provincia": "Caltanissetta",
+   "regione": "Sicilia",
+   "comuni": 4,
+   "totale": 5,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 3,
+   "fisso": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "BT",
+   "provincia": "Barletta-Andria-Trani",
+   "regione": "Puglia",
+   "comuni": 4,
+   "totale": 5,
+   "segnalati_non_attivi": 0,
+   "mobile": 4,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "CB",
+   "provincia": "Campobasso",
+   "regione": "Molise",
+   "comuni": 4,
+   "totale": 5,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 4,
+   "fisso_mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "AP",
+   "provincia": "Ascoli Piceno",
+   "regione": "Marche",
+   "comuni": 1,
+   "organi_provinciali": 2,
+   "totale": 5,
+   "segnalati_non_attivi": 0,
+   "mobile": 3,
+   "fisso": 2,
+   "provinciali": 2
+  },
+  {
+   "sigla": "LO",
+   "provincia": "Lodi",
+   "regione": "Lombardia",
+   "comuni": 3,
+   "totale": 4,
+   "segnalati_non_attivi": 0,
+   "mobile": 4,
+   "provinciali": 0
+  },
+  {
+   "sigla": "AV",
+   "provincia": "Avellino",
+   "regione": "Campania",
+   "comuni": 2,
+   "totale": 3,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 3,
+   "provinciali": 0
+  },
+  {
+   "sigla": "EN",
+   "provincia": "Enna",
+   "regione": "Sicilia",
+   "comuni": 1,
+   "totale": 2,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 1,
+   "mobile": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "AG",
+   "provincia": "Agrigento",
+   "regione": "Sicilia",
+   "comuni": 2,
+   "totale": 2,
+   "segnalati_non_attivi": 0,
+   "mobile": 1,
+   "non_precisato": 1,
+   "provinciali": 0
+  },
+  {
+   "sigla": "VV",
+   "provincia": "Vibo Valentia",
+   "regione": "Calabria",
+   "comuni": 1,
+   "totale": 2,
+   "segnalati_non_attivi": 0,
+   "velocita_media": 2,
+   "provinciali": 0
+  },
+  {
+   "sigla": "NU",
+   "provincia": "Nuoro",
+   "regione": "Sardegna",
+   "comuni": 1,
+   "totale": 1,
+   "segnalati_non_attivi": 0,
+   "non_precisato": 1,
+   "provinciali": 0
+  }
+ ],
+ "top_comuni": [
+  [
+   "Roma",
+   "RM",
+   43
+  ],
+  [
+   "Genova",
+   "GE",
+   29
+  ],
+  [
+   "Venezia",
+   "VE",
+   24
+  ],
+  [
+   "Firenze",
+   "FI",
+   23
+  ],
+  [
+   "Milano",
+   "MI",
+   22
+  ],
+  [
+   "Bologna",
+   "BO",
+   21
+  ],
+  [
+   "Ferrara",
+   "FE",
+   20
+  ],
+  [
+   "Guastalla",
+   "RE",
+   18
+  ],
+  [
+   "Terni",
+   "TR",
+   16
+  ],
+  [
+   "Palermo",
+   "PA",
+   15
+  ],
+  [
+   "Torino",
+   "TO",
+   15
+  ],
+  [
+   "Padova",
+   "PD",
+   14
+  ],
+  [
+   "Empoli",
+   "FI",
+   13
+  ],
+  [
+   "Borgo San Lorenzo",
+   "FI",
+   12
+  ],
+  [
+   "Imola",
+   "BO",
+   12
+  ],
+  [
+   "Ventimiglia",
+   "IM",
+   11
+  ],
+  [
+   "Bertiolo",
+   "UD",
+   10
+  ],
+  [
+   "Fiumicino",
+   "RM",
+   10
+  ],
+  [
+   "Ravenna",
+   "RA",
+   10
+  ],
+  [
+   "Rivoli",
+   "TO",
+   10
+  ]
+ ],
+ "citta": {
+  "Roma": {
+   "nome": "Roma",
+   "sigla": "RM",
+   "provincia": "Roma",
+   "regione": "Lazio",
+   "totale": 43,
+   "categorie": {
+    "mobile": 4,
+    "non_precisato": 31,
+    "velocita_media": 8
+   },
+   "organi": [
+    "POLIZIA ROMA CAPITALE"
+   ],
+   "modelli": [
+    [
+     "SODI SCIENTIFICA SRL AUTOVELOX",
+     27
+    ],
+    [
+     "Engine spa CELERITAS EVO",
+     6
+    ],
+    [
+     "ELTRAFF SRL TELELASER",
+     4
+    ],
+    [
+     "Project Automation spa K53800",
+     4
+    ],
+    [
+     "movyon spa Tutor",
+     2
+    ]
+   ],
+   "conNote": 37,
+   "nonAttivi": 0,
+   "provinciali": 26,
+   "altriComuniProvincia": 19,
+   "dispositiviAltriComuni": 46
+  },
+  "Milano": {
+   "nome": "Milano",
+   "sigla": "MI",
+   "provincia": "Milano",
+   "regione": "Lombardia",
+   "totale": 22,
+   "categorie": {
+    "fisso": 17,
+    "non_precisato": 3,
+    "mobile": 2
+   },
+   "organi": [
+    "Polizia Locale comune Milano"
+   ],
+   "modelli": [
+    [
+     "Lindblad & Piana s.r.l. Traffiphot III SR-Photor&V",
+     8
+    ],
+    [
+     "KRIA s.r.l. T-EXSPEED V.2.0",
+     7
+    ],
+    [
+     "Sodi Scientifica Autovelox 106",
+     3
+    ],
+    [
+     "EngiNe S.r.l. EnVES EVO MVD 1505",
+     2
+    ],
+    [
+     "Laser Technology Inc. Telelaser Ultralyte",
+     2
+    ]
+   ],
+   "conNote": 5,
+   "nonAttivi": 2,
+   "provinciali": 31,
+   "altriComuniProvincia": 40,
+   "dispositiviAltriComuni": 60
+  },
+  "Torino": {
+   "nome": "Torino",
+   "sigla": "TO",
+   "provincia": "Torino",
+   "regione": "Piemonte",
+   "totale": 15,
+   "categorie": {
+    "non_precisato": 4,
+    "velocita_media": 4,
+    "mobile": 7
+   },
+   "organi": [
+    "COMUNE DI TORINO - POLIZIA LOCALE"
+   ],
+   "modelli": [
+    [
+     "ELTRAFF Telelaser",
+     7
+    ],
+    [
+     "ENGINE S.p.A. ENVES EVO MVD 1605",
+     4
+    ],
+    [
+     "ENGINE S.p.A. CELERITAS MVD 2020",
+     4
+    ]
+   ],
+   "conNote": 15,
+   "nonAttivi": 0,
+   "provinciali": 0,
+   "altriComuniProvincia": 54,
+   "dispositiviAltriComuni": 104
+  },
+  "Napoli": {
+   "nome": "Napoli",
+   "sigla": "NA",
+   "provincia": "Napoli",
+   "regione": "Campania",
+   "totale": 1,
+   "categorie": {
+    "mobile": 1
+   },
+   "organi": [
+    "SERVIZIO INTERCOMUNALE POLIZIA LOCALE DELTA"
+   ],
+   "modelli": [
+    [
+     "Safety21 S.p.A. AGUIA Red & Speed",
+     1
+    ]
+   ],
+   "conNote": 1,
+   "nonAttivi": 0,
+   "provinciali": 0,
+   "altriComuniProvincia": 7,
+   "dispositiviAltriComuni": 10
+  },
+  "Genova": {
+   "nome": "Genova",
+   "sigla": "GE",
+   "provincia": "Genova",
+   "regione": "Liguria",
+   "totale": 29,
+   "categorie": {
+    "fisso": 16,
+    "velocita_media": 4,
+    "mobile": 9
+   },
+   "organi": [
+    "CORPO POLIZIA LOCALE DEL COMUNE DI GENOVA"
+   ],
+   "modelli": [
+    [
+     "EngiNe S.r.l. EnVES EVO MVD 1605",
+     13
+    ],
+    [
+     "ELTRAF S.R.L. TRUCAM",
+     7
+    ],
+    [
+     "EngiNe S.r.l. CELERITAS MVD 2020",
+     2
+    ],
+    [
+     "EngiNe S.r.l EnVES EVO MVD 1605",
+     2
+    ],
+    [
+     "EngiNe S.r.l. CELERITAS EVO 1506",
+     2
+    ],
+    [
+     "EngiNe Sr.l. EnVES EVO MVD 1605",
+     1
+    ]
+   ],
+   "conNote": 20,
+   "nonAttivi": 0,
+   "provinciali": 0,
+   "altriComuniProvincia": 11,
+   "dispositiviAltriComuni": 14
+  },
+  "Firenze": {
+   "nome": "Firenze",
+   "sigla": "FI",
+   "provincia": "Firenze",
+   "regione": "Toscana",
+   "totale": 23,
+   "categorie": {
+    "non_precisato": 17,
+    "fisso": 4,
+    "mobile": 2
+   },
+   "organi": [
+    "FIRENZE POLIZIA MUNICIPALE"
+   ],
+   "modelli": [
+    [
+     "Sodi Scientifica 105 SE",
+     10
+    ],
+    [
+     "Sodi Scientifica 106",
+     7
+    ],
+    [
+     "Safety21 S.p.A. VRS-EVO-R",
+     4
+    ],
+    [
+     "Eltraff s.r.l. Telelaser",
+     2
+    ]
+   ],
+   "conNote": 23,
+   "nonAttivi": 0,
+   "provinciali": 7,
+   "altriComuniProvincia": 19,
+   "dispositiviAltriComuni": 71
+  },
+  "Bologna": {
+   "nome": "Bologna",
+   "sigla": "BO",
+   "provincia": "Bologna",
+   "regione": "Emilia-Romagna",
+   "totale": 21,
+   "categorie": {
+    "non_precisato": 15,
+    "mobile": 6
+   },
+   "organi": [
+    "Comune di Bologna"
+   ],
+   "modelli": [
+    [
+     "VELOCAR VRS EVO r 2",
+     15
+    ],
+    [
+     "ELTRAFF TELELASER",
+     6
+    ]
+   ],
+   "conNote": 1,
+   "nonAttivi": 0,
+   "provinciali": 17,
+   "altriComuniProvincia": 24,
+   "dispositiviAltriComuni": 64
+  },
+  "Venezia": {
+   "nome": "Venezia",
+   "sigla": "VE",
+   "provincia": "Venezia",
+   "regione": "Veneto",
+   "totale": 24,
+   "categorie": {
+    "non_precisato": 6,
+    "fisso": 7,
+    "mobile": 11
+   },
+   "organi": [
+    "VENEZIA POLIZIA MUNICIPALE"
+   ],
+   "modelli": [
+    [
+     "Eltraf Telelaser",
+     11
+    ],
+    [
+     "Sodi Scientifica Autovelox 106",
+     6
+    ],
+    [
+     "Traffic Tecnology TCS - Traffic Control System",
+     5
+    ],
+    [
+     "Kria S.R.L. T-EXSPEED V. 2.0",
+     2
+    ]
+   ],
+   "conNote": 0,
+   "nonAttivi": 0,
+   "provinciali": 1,
+   "altriComuniProvincia": 24,
+   "dispositiviAltriComuni": 46
+  },
+  "Palermo": {
+   "nome": "Palermo",
+   "sigla": "PA",
+   "provincia": "Palermo",
+   "regione": "Sicilia",
+   "totale": 15,
+   "categorie": {
+    "non_precisato": 10,
+    "mobile": 5
+   },
+   "organi": [
+    "Polizia locale Comune di Palermo"
+   ],
+   "modelli": [
+    [
+     "SODI SCIENTIFICA AUTOVELOX 105SE",
+     5
+    ],
+    [
+     "SODI SCIENTIFICA AUTOVELOX 106",
+     5
+    ],
+    [
+     "ELTRAFF TELELASER TRUSPEED",
+     3
+    ],
+    [
+     "ELTRAFF TELELASER ULTRALYTE",
+     2
+    ]
+   ],
+   "conNote": 0,
+   "nonAttivi": 0,
+   "provinciali": 0,
+   "altriComuniProvincia": 13,
+   "dispositiviAltriComuni": 15
+  }
+ },
+ "nomi_province": {
+  "TO": "Torino",
+  "VC": "Vercelli",
+  "NO": "Novara",
+  "CN": "Cuneo",
+  "AT": "Asti",
+  "AL": "Alessandria",
+  "BI": "Biella",
+  "VB": "Verbano-Cusio-Ossola",
+  "AO": "Valle d'Aosta/Vallée d'Aoste",
+  "VA": "Varese",
+  "CO": "Como",
+  "SO": "Sondrio",
+  "MI": "Milano",
+  "BG": "Bergamo",
+  "BS": "Brescia",
+  "PV": "Pavia",
+  "CR": "Cremona",
+  "MN": "Mantova",
+  "LC": "Lecco",
+  "LO": "Lodi",
+  "MB": "Monza e della Brianza",
+  "BZ": "Bolzano/Bozen",
+  "TN": "Trento",
+  "VR": "Verona",
+  "VI": "Vicenza",
+  "BL": "Belluno",
+  "TV": "Treviso",
+  "VE": "Venezia",
+  "PD": "Padova",
+  "RO": "Rovigo",
+  "UD": "Udine",
+  "GO": "Gorizia",
+  "TS": "Trieste",
+  "PN": "Pordenone",
+  "IM": "Imperia",
+  "SV": "Savona",
+  "GE": "Genova",
+  "SP": "La Spezia",
+  "PC": "Piacenza",
+  "PR": "Parma",
+  "RE": "Reggio nell'Emilia",
+  "MO": "Modena",
+  "BO": "Bologna",
+  "FE": "Ferrara",
+  "RA": "Ravenna",
+  "FC": "Forlì-Cesena",
+  "RN": "Rimini",
+  "MS": "Massa-Carrara",
+  "LU": "Lucca",
+  "PT": "Pistoia",
+  "FI": "Firenze",
+  "LI": "Livorno",
+  "PI": "Pisa",
+  "AR": "Arezzo",
+  "SI": "Siena",
+  "GR": "Grosseto",
+  "PO": "Prato",
+  "PG": "Perugia",
+  "TR": "Terni",
+  "PU": "Pesaro e Urbino",
+  "AN": "Ancona",
+  "MC": "Macerata",
+  "AP": "Ascoli Piceno",
+  "FM": "Fermo",
+  "VT": "Viterbo",
+  "RI": "Rieti",
+  "RM": "Roma",
+  "LT": "Latina",
+  "FR": "Frosinone",
+  "AQ": "L'Aquila",
+  "TE": "Teramo",
+  "PE": "Pescara",
+  "CH": "Chieti",
+  "CB": "Campobasso",
+  "IS": "Isernia",
+  "CE": "Caserta",
+  "BN": "Benevento",
+  "NA": "Napoli",
+  "AV": "Avellino",
+  "SA": "Salerno",
+  "FG": "Foggia",
+  "BA": "Bari",
+  "TA": "Taranto",
+  "BR": "Brindisi",
+  "LE": "Lecce",
+  "BT": "Barletta-Andria-Trani",
+  "PZ": "Potenza",
+  "MT": "Matera",
+  "CS": "Cosenza",
+  "CZ": "Catanzaro",
+  "RC": "Reggio Calabria",
+  "KR": "Crotone",
+  "VV": "Vibo Valentia",
+  "TP": "Trapani",
+  "PA": "Palermo",
+  "ME": "Messina",
+  "AG": "Agrigento",
+  "CL": "Caltanissetta",
+  "EN": "Enna",
+  "CT": "Catania",
+  "RG": "Ragusa",
+  "SR": "Siracusa",
+  "SS": "Sassari",
+  "NU": "Nuoro",
+  "CA": "Cagliari",
+  "OR": "Oristano",
+  "SU": "Sud Sardegna"
+ }
+}

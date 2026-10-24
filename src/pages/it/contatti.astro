@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'it';
+---
+<PageLayout title={`Contatti – ${SITE_NAMES[lang]}`} description="Scrivi all’editore di Multe e Autovelox: segnala un importo o un punteggio sbagliato, un autovelox dismesso, una domanda sul metodo, o inserisci il calcolatore." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contatti' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contatti</h1>
+    <p>Un solo indirizzo, letto ogni settimana: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Non c’è una linea telefonica e non richiamiamo nessuno: questo sito non vende nulla.</p>
+    <h2>Segnalare un errore</h2>
+    <p>Per un importo o un numero di punti, allega l’articolo o la pagina ufficiale che contraddice il calcolo, oppure incolla il link di condivisione dello strumento: contiene le tue scelte e nient’altro. Per un autovelox indica il comune e l’ente che lo gestisce. Non mandarci mai il verbale, la targa o il numero di patente: non ci servono. La procedura è nella <a href={route('editorial', lang)}>politica editoriale</a>.</p>
+    <h2>Cosa non possiamo fare</h2>
+    <p>Non abbiamo accesso a nessun archivio: né al tuo saldo punti, né ai verbali, né alle foto. Il saldo è sul Portale dell’automobilista; un verbale si paga o si contesta come indicato sul verbale stesso, presso l’ente che l’ha emesso. Non diamo consulenza legale su casi individuali.</p>
+    <h2>Inserire il calcolatore</h2>
+    <p>Autoscuole, associazioni, testate locali: il calcolatore delle multe si inserisce gratis con un iframe. Il codice è nella pagina <a href={route('widget', lang)}>Inserisci il calcolatore</a>.</p>
+    <h2>Editore</h2>
+    <LegalIdentity lang={lang} />
+    <p>{AUTHOR_NAME} è responsabile dei contenuti di Multe e Autovelox; i dati completi sono nelle <a href={route('terms', lang)}>note legali</a>. Pagina rivista il {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

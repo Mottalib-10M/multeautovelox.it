@@ -1,0 +1,32 @@
+{
+  "fonte": "Ministero delle infrastrutture e dei trasporti, Lista dispositivi di rilevamento della velocità",
+  "fonte_url": "https://velox.mit.gov.it/dispositivi",
+  "licenza": "CC BY 3.0 IT (Note legali mit.gov.it)",
+  "licenza_url": "https://creativecommons.org/licenses/by/3.0/it/legalcode",
+  "base_giuridica": "Decreto direttoriale MIT n. 367 del 29 settembre 2025, art. 1 c. 3-4 ; decreto direttoriale n. 305 del 18 agosto 2025, art. 5 c. 2",
+  "origine": "wayback",
+  "catturato_il": "2026-02-22T10:29:50Z",
+  "wayback_url": "https://web.archive.org/web/20260222102950/https://velox.mit.gov.it/dispositivi/data?draw=2&columns%5B0%5D%5Bdata%5D=codice_accertatore&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=denominazione_accertatore&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=codice_catastale_accertatore&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=n_decreto&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=data_decreto&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=tipo_dispositivo&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=marca_dispositivo&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=modello_dispositivo&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=versione_dispositivo&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=matricola_dispositivo&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=note&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=created_at&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&order%5B0%5D%5Bname%5D=&start=0&length=-1&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1764417074108",
+  "ultima_comunicazione": "2026-02-21 11:54:28",
+  "dispositivi_totali": 3896,
+  "dispositivi_abbinati": 3174,
+  "dispositivi_altri_organi": 722,
+  "comuni_con_dispositivi": 1503,
+  "abbinamento_comune": {
+    "codice": 2754,
+    "provincia": 278,
+    "codici_multipli": 19,
+    "nome": 123
+  },
+  "per_categoria": {
+    "totale": 3896,
+    "segnalati_non_attivi": 27,
+    "non_precisato": 1146,
+    "mobile": 1579,
+    "fisso": 602,
+    "velocita_media": 409,
+    "fisso_mobile": 160
+  },
+  "generato_il": "2026-10-24",
+  "avvertenza": "Il registro elenca gli apparecchi dichiarati da ciascun organo di polizia (marca, modello, decreto di approvazione, matricola). La posizione esatta compare solo quando l'organo l'ha scritta nelle note."
+}

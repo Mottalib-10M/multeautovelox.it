@@ -1,0 +1,21 @@
+{
+ "name": "Multe e Autovelox",
+ "short_name": "Multe Autovelox",
+ "description": "Multa autovelox 2026: velocità accertata dopo la tolleranza, importo entro 5 e 60 giorni, punti patente, sospensione e apparecchi censiti nel tuo comune.",
+ "start_url": "/it/",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#0B6E3A",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}

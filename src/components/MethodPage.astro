@@ -1,0 +1,103 @@
+---
+/** Metodo e fonti (page de confiance, RECETTE §8.2) : textes appliqués, choix de calcul, registre MIT, tests, limites, mises à jour. */
+import PageLayout from '../layouts/PageLayout.astro';
+import { route, type Locale } from '../i18n/routes';
+import { P } from '../lib/engine/params';
+import * as M from '../lib/engine/index';
+import { formatMoney, formatNumber, displayDate } from '../lib/format';
+import { breadcrumbSchema, webPageSchema, faqSchema } from '../lib/seo';
+import { CONTACT_EMAIL } from '../data/site-config';
+import S from '../data/velox/stats.json';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const it = lang === 'it';
+const tag = it ? 'it-IT' : 'en-GB';
+const $ = (n: number, d = 0) => formatMoney(n, d, lang);
+const n0 = (x: number, d = 0) => formatNumber(x, d, lang);
+const d = (iso: string) => displayDate(iso, tag);
+const title = it ? 'Metodo: come calcoliamo multa autovelox, punti e scadenze' : 'Method: how the fine, points and deadlines are worked out';
+const description = it ? 'Metodo del calcolatore: riduzione del 5 % (art. 345), fasce dell’art. 142, notte, sconto del 30 %, scadenze, tabella punti, registro MIT degli autovelox, test.' : 'How the calculator works: the 5% reduction (art. 345), article 142 bands, night surcharge, 30% discount, deadlines, points table, MIT camera register, tests.';
+const h1 = it ? 'Metodo e fonti' : 'Method and sources';
+const path = route('method', lang);
+const sources = Object.values(P.sources);
+const ex1 = M.velocita({ limite: 50, rilevata: 72 });
+const ex2 = M.velocita({ limite: 130, rilevata: 145 });
+const ex3 = M.velocita({ limite: 90, rilevata: 140, notte: true });
+const ex4 = M.scadenze('2026-10-01', '2026-10-20');
+const m = S.meta, I = S.italia;
+const reg = m.catturato_il.slice(0, 10);
+const RC = P.speeding.repeat_in_town_c8;
+const faqs = it ? [
+  { q: 'Perché la copia del registro degli autovelox non porta la data di oggi?', a: `Il sito del Ministero che pubblica la lista non rispondeva alle nostre richieste quando abbiamo costruito queste pagine. Lo script ha quindi preso l’ultima copia completa dello stesso file conservata da un archivio pubblico del web, datata ${d(reg)}. Quella è la data mostrata accanto a ogni numero. Ogni settimana lo script riprova la fonte diretta e, appena risponde, la data cambia da sola.` },
+  { q: 'Come si capisce se un apparecchio è fisso, mobile o a velocità media?', a: `Il registro non ha un campo per il tipo: lo si legge nel testo libero che ogni ente ha scritto alla voce tipo, modello o note. Lo script cerca parole come postazione fissa, telelaser, tratta o velocità media. Quando l’ente non scrive nulla di utile l’apparecchio resta tra i non precisati: nella copia attuale sono ${n0(I.categorie.non_precisato)} su ${n0(I.totale)}.` },
+  { q: 'Il risultato del calcolatore si può usare come prova in un ricorso?', a: 'No. Il calcolo applica gli articoli del Codice della Strada ai dati che inserisci e serve a capire cosa aspettarsi, ma non sostituisce il verbale, che è l’unico atto che fa fede. In un ricorso contano il verbale, la documentazione dell’apparecchio e le norme citate: il sito indica dove trovarle, non le produce né le certifica.' },
+] : [
+  { q: 'Why is the speed-camera register copy not dated today?', a: `The ministry site that publishes the list did not answer our requests while these pages were built. The script therefore took the latest complete copy of the same file kept by a public web archive, dated ${d(reg)}. That is the date shown next to every figure. Each week the script tries the direct source again, and the date changes on its own as soon as it answers.` },
+  { q: 'How does the site tell a fixed camera from a mobile or average-speed one?', a: `The register has no field for the type: it is read from the free text each police body wrote in the type, model or notes columns. The script looks for words such as fixed site, laser, section or average speed. When the body wrote nothing useful the device stays unspecified: in the current copy that is ${n0(I.categorie.non_precisato)} out of ${n0(I.totale)}.` },
+  { q: 'Can the calculator result be used as evidence in an appeal?', a: 'No. The calculation applies the articles of the Highway Code to the data you enter and helps you know what to expect, but it does not replace the fine notice, which is the only binding document. In an appeal what counts is the notice, the device paperwork and the rules quoted: the site says where to find them, it neither produces nor certifies them.' },
+];
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: h1, description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: h1, path }]), faqSchema(faqs, lang)]} faqs={faqs} breadcrumbs={[{ label: h1 }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">{h1}</h1></header>
+  {it ? (
+  <div class="prose prose-slate max-w-none">
+    <p>Il calcolatore applica testi di legge, non medie: il Codice della Strada (decreto legislativo 30 aprile 1992 n. 285) e il suo Regolamento (DPR 16 dicembre 1992 n. 495), nel testo vigente riletto su Normattiva il {d(P.retrieved_at)}, e il decreto legislativo 150 del 2011 per i ricorsi. Ogni importo, punto e termine viene dal file <code>src/data/params-2026.json</code>, che per ogni valore riporta l’articolo e una frase letterale del testo. Nessuna pagina scrive un numero a mano.</p>
+    <h2>La velocità accertata</h2>
+    <p>Alla velocità letta dall’apparecchio si toglie la riduzione dell’articolo 345, comma 2, del Regolamento: il 5 %, con un minimo di 5 km/h. Il risultato non viene arrotondato. Per la velocità media dedotta dai biglietti autostradali (comma 3) la riduzione è del 5, 10 o 15 % secondo la velocità; il calcolatore la offre come metodo separato. Il tutor misura il tempo tra due portali: la velocità media è distanza diviso tempo, poi si applica la stessa riduzione del 5 %. Esempio: {n0(72)} km/h letti su un limite di 50 danno {n0(ex1.accertata)} km/h accertati, {n0(ex1.eccesso)} oltre il limite, {$(ex1.minimo)} e {n0(ex1.punti)} punti; {n0(145)} km/h su un limite di 130 danno {n0(ex2.accertata, 2)} km/h e la prima fascia, {$(ex2.minimo)}.</p>
+    <h2>Fasce, maggiorazioni, recidiva</h2>
+    <p>L’eccesso dopo la riduzione sceglie uno dei quattro commi dell’articolo 142: 7 (fino a 10 km/h), 8 (oltre 10 e fino a 40), 9 (oltre 40 e fino a 60), 9-bis (oltre 60). Il calcolatore mostra il minimo e il massimo del comma. Tra le 22 e le 7 moltiplica per quattro terzi (articolo 195, comma 2-bis); per i veicoli pesanti del comma 3 raddoppia importi e sospensioni (comma 11); per la seconda violazione del comma 8 in centro abitato nell’anno applica {$(RC.min)}–{$(RC.max)} e {n0(RC.suspension_days.from)}–{n0(RC.suspension_days.to)} giorni di sospensione. Esempio: {n0(140)} km/h di notte su un limite di 90 danno {n0(ex3.accertata)} km/h accertati, la fascia del comma 9 e {$(ex3.minimo, 2)} di minimo, senza sconto. La recidiva in due anni dei commi 9 e 9-bis (sospensione da 8 a 18 mesi o revoca) è descritta nelle pagine ma non entra nel calcolo dell’importo.</p>
+    <h2>Pagamento e scadenze</h2>
+    <p>Lo sconto del 30 % sul minimo vale entro 5 giorni dalla notifica (articolo 202) ed è escluso quando la violazione comporta la sospensione della patente o la confisca. Il minimo si paga entro 60 giorni. Senza pagamento né ricorso, il verbale diventa titolo per la metà del massimo (articolo 203, comma 3). I termini si contano in giorni di calendario dal giorno dopo la notifica: notifica entro 90 giorni dall’accertamento, 360 per chi risiede all’estero (articolo 201); ricorso al prefetto entro 60 giorni, al giudice di pace entro 30 o 60 dall’estero. Esempio: infrazione il {d('2026-10-01')}, notifica il {d('2026-10-20')}: sconto fino al {d(ex4.pagamentoRidottoEntro)}, minimo fino al {d(ex4.pagamentoMinimoEntro)}, giudice di pace fino al {d(ex4.ricorsoGiudiceEntro)}. Il calcolatore non sposta le scadenze che cadono in un giorno festivo e lo dice nel risultato.</p>
+    <h2>Punti</h2>
+    <p>I punti vengono dalla tabella dell’articolo 126-bis nel testo in vigore dal 12 aprile 2025, letta riga per riga (97 righe in <code>src/data/tabella-punti.json</code>). Il calcolatore raddoppia i punti per chi ha la patente da meno di tre anni, limita a 15 i punti tolti per violazioni contestate nello stesso momento salvo sospensione o revoca (comma 1-bis), mostra la data in cui due anni senza violazioni riportano il saldo a 20 (comma 5) e l’effetto di un corso da 6 punti (comma 4). Il saldo di partenza è quello che inserisci: solo il Portale dell’automobilista mostra il saldo ufficiale.</p>
+    <h2>Il registro degli autovelox</h2>
+    <p>Il registro è la «Lista dispositivi di rilevamento della velocità» del Ministero delle infrastrutture e dei trasporti, pubblicata su velox.mit.gov.it dal 28 novembre 2025 in base al decreto direttoriale n. 367 del 29 settembre 2025. I contenuti del sito del Ministero sono distribuiti con licenza Creative Commons Attribuzione 3.0 Italia (note legali del sito mit.gov.it); i comuni vengono dall’elenco ISTAT dei codici, con licenza CC BY 4.0. Fonte: MIT, CC BY 3.0 IT; ISTAT, CC BY 4.0.</p>
+    <p>Data della copia. Il sito del Ministero non risponde alle richieste del nostro server: l’ultimo tentativo, il 24 ottobre 2026, è scaduto senza risposta. La pagina della lista risulta ancora pubblicata in un archivio web del 25 settembre 2026, ma l’ultima copia completa dei dati che abbiamo trovato è del {d(reg)} (archivio web, ultima comunicazione di un ente il 21 febbraio 2026). Ogni numero del sito sugli autovelox si riferisce quindi a quella data, ed è scritto accanto al numero. Appena il registro sarà di nuovo raggiungibile, la procedura settimanale lo rileggerà e la data cambierà da sola.</p>
+    <p>Contenuto. La copia conta {n0(I.totale)} apparecchi. Lo script <code>scripts/update-data.mjs</code> abbina ogni ente al suo comune con il codice catastale ({n0(m.abbinamento_comune.codice)} apparecchi), con il nome dell’ente quando il codice manca ({n0(m.abbinamento_comune.nome)}) o alla provincia per gli organi provinciali e metropolitani ({n0(m.abbinamento_comune.provincia)}); {n0(I.polizia_stradale)} apparecchi della Polizia Stradale e {n0(I.altri_senza_comune)} di altri organi restano senza comune. Il tipo (fisso, mobile, velocità media) è dedotto dal testo libero scritto dall’ente: {n0(I.categorie.non_precisato)} apparecchi non lo indicano. La posizione compare solo se l’ente l’ha scritta nelle note. {n0(I.categorie.segnalati_non_attivi)} apparecchi sono segnalati come dismessi o non attivi.</p>
+    <h2>I test</h2>
+    <p>Gli esempi di questa pagina, i confini tra le fasce, la riduzione a 100 km/h, la maggiorazione notturna, lo sconto escluso con la sospensione, il tetto di 15 punti, le scadenze e la velocità media sono test (<code>src/lib/engine/sanzioni.test.ts</code>), rieseguiti a ogni aggiornamento. Un test fallito blocca la pubblicazione. Ogni frase letterale del file dei parametri viene ricercata nel testo vigente riletto da Normattiva: se non si trova più, l’aggiornamento si ferma e il barème non cambia da solo.</p>
+    <h2>Cosa il sito non fa</h2>
+    <ul>
+      <li>Non legge il tuo fascicolo: importi e punti sono una stima da ciò che inserisci; fa fede il verbale ricevuto.</li>
+      <li>Non dice se un autovelox è omologato nel senso voluto dalla Cassazione: mostra il decreto dichiarato dall’ente.</li>
+      <li>Non anticipa gli importi 2027: il decreto non è ancora pubblicato.</li>
+      <li>Non vende ricorsi, consulenze né assicurazioni e non chiede account, e-mail o numero di telefono.</li>
+    </ul>
+    <h2>Aggiornamenti</h2>
+    <p>Ogni settimana una procedura pianificata rilegge il registro e i testi, rifiuta un registro con meno di 3 000 apparecchi, riesegue i test, ricostruisce e ripubblica il sito. Un errore segnalato a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> viene verificato sulla fonte, corretto e trasformato in test. Vedi la <a href={route('editorial', lang)}>politica editoriale</a>.</p>
+    <h2>Tutte le fonti</h2>
+    <ul>{sources.map((s) => <li><a href={s.url} rel="nofollow noopener" target="_blank">{s.label.it}</a></li>)}</ul>
+    <p class="text-sm text-navy-600">Testi riletti il <time datetime={P.retrieved_at}>{d(P.retrieved_at)}</time> · registro MIT nella versione del <time datetime={reg}>{d(reg)}</time>.</p>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <p>The calculator applies legal texts, not averages: the Italian Highway Code (legislative decree 285 of 30 April 1992) and its Regulation (presidential decree 495 of 16 December 1992), in the text in force as reread on Normattiva on {d(P.retrieved_at)}, and legislative decree 150 of 2011 for appeals. Every amount, point and deadline comes from <code>src/data/params-2026.json</code>, which records for each value the article and a literal sentence from the text. No page types a figure by hand.</p>
+    <h2>The speed held</h2>
+    <p>The speed read by the device is cut by the reduction in article 345, paragraph 2, of the Regulation: 5%, with a minimum of 5 km/h. The result is not rounded. For an average speed worked out from motorway toll tickets (paragraph 3) the reduction is 5, 10 or 15% depending on the speed; the calculator offers it as a separate method. A tutor system times you between two gantries: the average speed is distance over time, then the same 5% reduction applies. Example: {n0(72)} km/h recorded on a 50 limit gives {n0(ex1.accertata)} km/h held, {n0(ex1.eccesso)} over, {$(ex1.minimo)} and {n0(ex1.punti)} points; {n0(145)} km/h on a 130 limit gives {n0(ex2.accertata, 2)} km/h and the first band, {$(ex2.minimo)}.</p>
+    <h2>Bands, surcharges, repeat offences</h2>
+    <p>The excess after the reduction picks one of the four paragraphs of article 142: 7 (up to 10 km/h), 8 (more than 10 and up to 40), 9 (more than 40 and up to 60), 9-bis (more than 60). The calculator shows the minimum and maximum of the paragraph. Between 10 pm and 7 am it multiplies by four thirds (article 195, paragraph 2-bis); for the heavy vehicles of paragraph 3 it doubles amounts and suspensions (paragraph 11); for a second paragraph 8 offence in a built-up area within a year it applies {$(RC.min)}–{$(RC.max)} and a {n0(RC.suspension_days.from)}–{n0(RC.suspension_days.to)}-day suspension. Example: {n0(140)} km/h at night on a 90 limit gives {n0(ex3.accertata)} km/h held, the paragraph 9 band and a {$(ex3.minimo, 2)} minimum, with no discount. A repeat within two years of paragraph 9 or 9-bis (8 to 18 months of suspension, or revocation) is described on the pages but does not enter the amount calculation.</p>
+    <h2>Payment and deadlines</h2>
+    <p>The 30% discount on the minimum applies within 5 days of service (article 202) and is excluded when the offence carries a licence suspension or confiscation. The minimum is due within 60 days. With neither payment nor appeal, the fine becomes enforceable for half the maximum (article 203, paragraph 3). Periods are counted in calendar days from the day after service: service within 90 days of the offence being established, 360 for owners living abroad (article 201); appeal to the prefetto within 60 days, to the giudice di pace within 30, or 60 from abroad. Example: offence on {d('2026-10-01')}, served on {d('2026-10-20')}: discount until {d(ex4.pagamentoRidottoEntro)}, minimum until {d(ex4.pagamentoMinimoEntro)}, giudice di pace until {d(ex4.ricorsoGiudiceEntro)}. The calculator does not move deadlines that fall on a public holiday and says so in the result.</p>
+    <h2>Points</h2>
+    <p>Points come from the article 126-bis table in the text in force since 12 April 2025, read row by row (97 rows in <code>src/data/tabella-punti.json</code>). The calculator doubles points for licences held under three years, caps at 15 the points taken for offences recorded at the same time unless a suspension or revocation applies (paragraph 1-bis), shows the date on which two years without offences restore the balance to 20 (paragraph 5) and the effect of a 6-point course (paragraph 4). The starting balance is the one you enter: only the Portale dell’automobilista shows the official balance.</p>
+    <h2>The speed-camera register</h2>
+    <p>The register is the “Lista dispositivi di rilevamento della velocità” of the Ministry of Infrastructure and Transport, published on velox.mit.gov.it since 28 November 2025 under directorial decree 367 of 29 September 2025. Content on the ministry’s site is released under the Creative Commons Attribution 3.0 Italy licence (legal notes of mit.gov.it); comuni come from the ISTAT list of codes, under CC BY 4.0. Source: MIT, CC BY 3.0 IT; ISTAT, CC BY 4.0.</p>
+    <p>Date of the copy. The ministry’s site does not answer requests from our server: the latest attempt, on 24 October 2026, timed out. The list page still shows as published in a web archive of 25 September 2026, but the latest complete copy of the data we found dates from {d(reg)} (web archive, latest update from a police body on 21 February 2026). Every camera figure on the site therefore refers to that date, which is written next to it. As soon as the register can be reached again, the weekly job will reread it and the date will change by itself.</p>
+    <p>Content. The copy lists {n0(I.totale)} devices. The script <code>scripts/update-data.mjs</code> matches each body to its comune by cadastral code ({n0(m.abbinamento_comune.codice)} devices), by the body’s name when the code is missing ({n0(m.abbinamento_comune.nome)}) or to the province for provincial and metropolitan bodies ({n0(m.abbinamento_comune.provincia)}); {n0(I.polizia_stradale)} Polizia Stradale devices and {n0(I.altri_senza_comune)} from other bodies have no comune. The type (fixed, mobile, average speed) is read from the free text written by each body: {n0(I.categorie.non_precisato)} devices do not state it. A location only appears when the body wrote it in the notes. {n0(I.categorie.segnalati_non_attivi)} devices are reported as withdrawn or not active.</p>
+    <h2>The tests</h2>
+    <p>The examples on this page, the band boundaries, the reduction at 100 km/h, the night surcharge, the discount excluded with a suspension, the 15-point cap, the deadlines and the average speed are tests (<code>src/lib/engine/sanzioni.test.ts</code>), rerun at every update. A failing test blocks publication. Each literal sentence in the parameters file is searched for in the text in force reread from Normattiva: if it is no longer there, the update stops and the amounts never change by themselves.</p>
+    <h2>What the site does not do</h2>
+    <ul>
+      <li>It does not read your record: amounts and points are an estimate from what you enter; the fine you receive is binding.</li>
+      <li>It does not say whether a camera is homologated in the sense meant by the Court of Cassation: it shows the decree declared by the body.</li>
+      <li>It does not guess the 2027 amounts: the decree has not been published.</li>
+      <li>It sells no appeal service, advice or insurance and asks for no account, email or phone number.</li>
+    </ul>
+    <h2>Updates</h2>
+    <p>Every week a scheduled job rereads the register and the texts, rejects a register with fewer than 3,000 devices, reruns the tests, rebuilds and republishes the site. An error reported to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> is checked against the source, fixed and turned into a test. See the <a href={route('editorial', lang)}>editorial policy</a>.</p>
+    <h2>All sources</h2>
+    <ul>{sources.map((s) => <li><a href={s.url} rel="nofollow noopener" target="_blank">{s.label.en}</a></li>)}</ul>
+    <p class="text-sm text-navy-600">Texts reread on <time datetime={P.retrieved_at}>{d(P.retrieved_at)}</time> · MIT register in its version of <time datetime={reg}>{d(reg)}</time>.</p>
+  </div>
+  )}
+</PageLayout>

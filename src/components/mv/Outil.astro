@@ -1,0 +1,20 @@
+---
+/** Aiguillage vers l'outil principal d'une page (src/content/pagine : `tool` et `outil`). */
+import VelocitaTool from './VelocitaTool';
+import VeloxTool from './VeloxTool';
+import MappaTool from './MappaTool';
+import PuntiTool from './PuntiTool';
+import AltreTool from './AltreTool';
+import ScadenzeTool from './ScadenzeTool';
+import { BUILD_TODAY } from '../../lib/today';
+import type { Tool } from '../../lib/guide-types';
+interface Props { tool: Tool; lang: 'it' | 'en'; id: string; opts?: Record<string, unknown>; methodHref?: string }
+const { tool, lang, id, opts = {}, methodHref } = Astro.props;
+const o = opts as any;
+---
+{tool === 'velocita' && <VelocitaTool client:load lang={lang} id={id} methodHref={methodHref} {...o} />}
+{tool === 'velox' && <VeloxTool client:load lang={lang} id={id} methodHref={methodHref} {...o} />}
+{tool === 'mappa' && <MappaTool client:load lang={lang} id={id} methodHref={methodHref} {...o} />}
+{tool === 'punti' && <PuntiTool client:load lang={lang} id={id} today={BUILD_TODAY} methodHref={methodHref} {...o} />}
+{tool === 'altre' && <AltreTool client:load lang={lang} id={id} methodHref={methodHref} {...o} />}
+{tool === 'scadenze' && <ScadenzeTool client:load lang={lang} id={id} today={BUILD_TODAY} methodHref={methodHref} {...o} />}
