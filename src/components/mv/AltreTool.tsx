@@ -62,9 +62,9 @@ export default function AltreTool({ lang: l, id = 'altre', defaultId = 'cellular
   );
   const head = r.ridotto !== null
     ? <Head label={T(l, 'Da pagare entro 5 giorni', 'To pay within 5 days')} value={eur(r.ridotto, l)} sub={T(l, `${eur(r.minimo, l)} entro 60 giorni · ${pts(r.punti, l)}`, `${eur(r.minimo, l)} within 60 days · ${pts(r.punti, l)}`)} />
-    : <Head label={T(l, 'Da pagare entro 60 giorni', 'To pay within 60 days')} value={eur(r.minimo, l)} sub={T(l, `niente sconto del 30 % · ${pts(r.punti, l)}`, `no 30% discount · ${pts(r.punti, l)}`)} />;
+    : <Head label={T(l, 'Da pagare entro 60 giorni', 'To pay within 60 days')} value={eur(r.minimo, l)} sub={T(l, `niente sconto del 30% · ${pts(r.punti, l)}`, `no 30% discount · ${pts(r.punti, l)}`)} />;
   const rows: Array<[string, string] | [string, string, boolean]> = [];
-  if (r.ridotto !== null) rows.push([T(l, 'Entro 5 giorni (−30 %)', 'Within 5 days (−30%)'), eur(r.ridotto, l), true]);
+  if (r.ridotto !== null) rows.push([T(l, 'Entro 5 giorni (−30%)', 'Within 5 days (−30%)'), eur(r.ridotto, l), true]);
   rows.push([T(l, 'Entro 60 giorni (minimo)', 'Within 60 days (minimum)'), eur(r.minimo, l)]);
   rows.push([T(l, 'Massimo previsto', 'Maximum set by law'), eur(r.massimo, l)]);
   rows.push([T(l, 'Se non paghi né fai ricorso', 'If you neither pay nor appeal'), T(l, `${eur(r.metaMassimo, l)} + spese`, `${eur(r.metaMassimo, l)} + costs`)]);

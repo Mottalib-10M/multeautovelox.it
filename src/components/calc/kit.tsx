@@ -37,7 +37,8 @@ export function Shell({ form, result, id }: { form: ReactNode; result: ReactNode
     </div>
   );
 }
-export const Row2 = ({ children }: { children: ReactNode }) => <div className="grid grid-cols-2 gap-x-4 gap-y-4">{children}</div>;
+// Une colonne sur téléphone : à deux, la liste des infractions était tronquée (2026-10-24).
+export const Row2 = ({ children }: { children: ReactNode }) => <div className="grid gap-x-4 gap-y-4 sm:grid-cols-2">{children}</div>;
 
 export function Head({ label, value, sub }: { label: string; value: string; sub?: string }) {
   const report = useContext(KeyFigure);

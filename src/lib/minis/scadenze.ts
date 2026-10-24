@@ -13,7 +13,7 @@ export default (l: L): MiniSpec => ({
   run: (v) => {
     const left = (n: number) => (n - v.g < 0 ? T(l, 'scaduto', 'passed') : T(l, `${n - v.g} giorni`, `${n - v.g} days`));
     return {
-      head: [T(l, 'Sconto del 30 %', '30% discount'), left(P.payment.reduced_within_days)],
+      head: [T(l, 'Sconto del 30%', '30% discount'), left(P.payment.reduced_within_days)],
       rows: [
         [T(l, 'Minimo', 'Minimum'), left(P.payment.within_days_minimum)],
         [T(l, 'Ricorso al prefetto', 'Appeal to the prefetto'), left(P.appeal.prefetto.days)],

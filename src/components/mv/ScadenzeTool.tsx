@@ -76,7 +76,7 @@ export default function ScadenzeTool({ lang: l, id = 'scadenze', today, mode = '
 
   const head = mode === 'pagamento'
     ? (ridotto !== null
-      ? <Head label={T(l, `Sconto del 30 %: ${eur(ridotto, l)} fino al`, `30% discount: ${eur(ridotto, l)} until`)} value={d(s.pagamentoRidottoEntro)} sub={rest(s.pagamentoRidottoEntro)} />
+      ? <Head label={T(l, `Sconto del 30%: ${eur(ridotto, l)} fino al`, `30% discount: ${eur(ridotto, l)} until`)} value={d(s.pagamentoRidottoEntro)} sub={rest(s.pagamentoRidottoEntro)} />
       : <Head label={T(l, `Niente sconto: ${eur(f.min, l)} entro il`, `No discount: ${eur(f.min, l)} by`)} value={d(s.pagamentoMinimoEntro)} sub={rest(s.pagamentoMinimoEntro)} />)
     : mode === 'nonpagata'
       ? <Head label={giorni > P.payment.within_days_minimum ? T(l, 'Ora si deve', 'Now owed') : T(l, 'Se lasci passare i 60 giorni', 'If you let the 60 days pass')} value={eur(meta, l)} sub={T(l, `metà del massimo (${eur(f.max, l)}) più le spese di notifica e procedimento`, `half the maximum (${eur(f.max, l)}) plus service and procedure costs`)} />
@@ -85,7 +85,7 @@ export default function ScadenzeTool({ lang: l, id = 'scadenze', today, mode = '
   const rows: Array<[string, string] | [string, string, boolean]> = [
     [T(l, `Notifica entro ${estero ? P.notification.days_abroad : P.notification.days} giorni`, `Service within ${estero ? P.notification.days_abroad : P.notification.days} days`), s.notificaOltreTermine ? T(l, `oltre il termine (${s.giorniTraInfrazioneENotifica} giorni)`, `late (${s.giorniTraInfrazioneENotifica} days)`) : T(l, `rispettata (${s.giorniTraInfrazioneENotifica} giorni)`, `on time (${s.giorniTraInfrazioneENotifica} days)`), s.notificaOltreTermine],
   ];
-  if (ridotto !== null) rows.push([T(l, `${eur(ridotto, l)} (−30 %) fino al`, `${eur(ridotto, l)} (−30%) until`), `${d(s.pagamentoRidottoEntro)} · ${rest(s.pagamentoRidottoEntro)}`]);
+  if (ridotto !== null) rows.push([T(l, `${eur(ridotto, l)} (−30%) fino al`, `${eur(ridotto, l)} (−30%) until`), `${d(s.pagamentoRidottoEntro)} · ${rest(s.pagamentoRidottoEntro)}`]);
   rows.push([T(l, `${eur(f.min, l)} fino al`, `${eur(f.min, l)} until`), `${d(s.pagamentoMinimoEntro)} · ${rest(s.pagamentoMinimoEntro)}`]);
   rows.push([T(l, 'Ricorso al prefetto entro', 'Appeal to the prefetto by'), `${d(s.ricorsoPrefettoEntro)} · ${rest(s.ricorsoPrefettoEntro)}`]);
   rows.push([T(l, 'Ricorso al giudice di pace entro', 'Appeal to the giudice di pace by'), `${d(s.ricorsoGiudiceEntro)} · ${rest(s.ricorsoGiudiceEntro)}`]);

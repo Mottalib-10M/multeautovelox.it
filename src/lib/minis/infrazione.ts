@@ -15,7 +15,7 @@ export default (l: L): MiniSpec => ({
   run: (v) => {
     const r = altra(IDS[v.i] ?? IDS[0], { neopatentato: v.n === 1 });
     return {
-      head: r.ridotto !== null ? [T(l, 'Entro 5 giorni (−30 %)', 'Within 5 days (−30%)'), soldi(r.ridotto, l)] : [T(l, 'Entro 60 giorni', 'Within 60 days'), soldi(r.minimo, l)],
+      head: r.ridotto !== null ? [T(l, 'Entro 5 giorni (−30%)', 'Within 5 days (−30%)'), soldi(r.ridotto, l)] : [T(l, 'Entro 60 giorni', 'Within 60 days'), soldi(r.minimo, l)],
       rows: [[T(l, 'Importo minimo e massimo', 'Minimum and maximum'), `${soldi(r.minimo, l)} – ${soldi(r.massimo, l)}`], [T(l, 'Punti', 'Points'), pts(r.punti, l)], [T(l, 'Sospensione', 'Suspension'), sosp(r.sospensione, l)]],
     };
   },

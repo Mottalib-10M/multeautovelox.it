@@ -66,7 +66,7 @@ export default function VelocitaTool({ lang: l, id = 'velocita', mode = 'velocit
             <NumberField id={`${id}-mn`} label={T(l, 'Tempo: minuti', 'Time: minutes')} value={mn} onChange={setMn} unit="min" max={600} />
             <NumberField id={`${id}-sec`} label={T(l, 'e secondi', 'and seconds')} value={sec} onChange={setSec} unit="s" max={59} />
           </Row2>
-          <Note>{T(l, `Velocità media: ${kmh(rilevata, l)}. Poi si toglie la riduzione dell’art. 345 (${formatNumber(P.tolerance.percent * 100, 0, l)} %, almeno ${P.tolerance.min_kmh} km/h).`, `Average speed: ${kmh(rilevata, l)}. The article 345 reduction (${formatNumber(P.tolerance.percent * 100, 0, l)}%, at least ${P.tolerance.min_kmh} km/h) is then subtracted.`)}</Note>
+          <Note>{T(l, `Velocità media: ${kmh(rilevata, l)}. Poi si toglie la riduzione dell’art. 345 (${formatNumber(P.tolerance.percent * 100, 0, l)}%, almeno ${P.tolerance.min_kmh} km/h).`, `Average speed: ${kmh(rilevata, l)}. The article 345 reduction (${formatNumber(P.tolerance.percent * 100, 0, l)}%, at least ${P.tolerance.min_kmh} km/h) is then subtracted.`)}</Note>
         </>
       ) : (
         <>
@@ -97,7 +97,7 @@ export default function VelocitaTool({ lang: l, id = 'velocita', mode = 'velocit
     ? <Head label={T(l, 'Nessuna multa per velocità', 'No speeding fine')} value={eur(0, l)} sub={T(l, `Velocità accertata ${kmh(r.accertata, l)} su un limite di ${kmh(lim, l)}`, `Speed held ${kmh(r.accertata, l)} for a ${kmh(lim, l)} limit`)} />
     : r.ridotto !== null
       ? <Head label={T(l, 'Da pagare entro 5 giorni', 'To pay within 5 days')} value={eur(r.ridotto, l)} sub={T(l, `${eur(r.minimo, l)} entro 60 giorni · ${pts(r.punti, l)}`, `${eur(r.minimo, l)} within 60 days · ${pts(r.punti, l)}`)} />
-      : <Head label={T(l, 'Da pagare entro 60 giorni', 'To pay within 60 days')} value={eur(r.minimo, l)} sub={T(l, `niente sconto del 30 % (sospensione) · ${pts(r.punti, l)}`, `no 30% discount (suspension) · ${pts(r.punti, l)}`)} />;
+      : <Head label={T(l, 'Da pagare entro 60 giorni', 'To pay within 60 days')} value={eur(r.minimo, l)} sub={T(l, `niente sconto del 30% (sospensione) · ${pts(r.punti, l)}`, `no 30% discount (suspension) · ${pts(r.punti, l)}`)} />;
 
   const rows: Array<[string, string] | [string, string, boolean]> = [
     [T(l, `Velocità accertata (−${formatNumber(r.riduzioneKmh, Number.isInteger(r.riduzioneKmh) ? 0 : 2, l)} km/h)`, `Speed held (−${formatNumber(r.riduzioneKmh, Number.isInteger(r.riduzioneKmh) ? 0 : 2, l)} km/h)`), kmh(r.accertata, l)],
@@ -105,7 +105,7 @@ export default function VelocitaTool({ lang: l, id = 'velocita', mode = 'velocit
   if (r.infrazione && r.band) {
     rows.push([T(l, 'Eccesso oltre il limite', 'Over the limit by'), kmh(r.eccesso, l)]);
     rows.push([T(l, 'Fascia', 'Band'), `${r.band.ref} · ${BAND_LABEL[r.band.id][l]}`]);
-    if (r.ridotto !== null) rows.push([T(l, 'Entro 5 giorni (−30 %)', 'Within 5 days (−30%)'), eur(r.ridotto, l), true]);
+    if (r.ridotto !== null) rows.push([T(l, 'Entro 5 giorni (−30%)', 'Within 5 days (−30%)'), eur(r.ridotto, l), true]);
     rows.push([T(l, 'Entro 60 giorni (minimo)', 'Within 60 days (minimum)'), eur(r.minimo, l)]);
     rows.push([T(l, 'Se non paghi né fai ricorso', 'If you neither pay nor appeal'), T(l, `${eur(r.metaMassimo, l)} + spese`, `${eur(r.metaMassimo, l)} + costs`)]);
     rows.push([T(l, 'Punti decurtati', 'Points deducted'), String(r.punti), true]);

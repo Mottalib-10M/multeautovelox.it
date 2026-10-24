@@ -11,7 +11,7 @@ export default (l: L): MiniSpec => ({
     const r = riduzione(v.v);
     return {
       head: [T(l, 'Velocità accertata', 'Speed held'), kmh(Math.round((v.v - r) * 100) / 100, l)],
-      rows: [[T(l, 'Riduzione applicata', 'Reduction applied'), kmh(r, l)], [T(l, 'Regola', 'Rule'), v.v * 0.05 > 5 ? T(l, '5 % della velocità', '5% of the speed') : T(l, 'minimo di 5 km/h', '5 km/h minimum')]],
+      rows: [[T(l, 'Riduzione applicata', 'Reduction applied'), kmh(r, l)], [T(l, 'Regola', 'Rule'), v.v * 0.05 > 5 ? T(l, '5% della velocità', '5% of the speed') : T(l, 'minimo di 5 km/h', '5 km/h minimum')]],
     };
   },
 });

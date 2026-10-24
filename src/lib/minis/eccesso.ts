@@ -12,9 +12,9 @@ export default (l: L): MiniSpec => ({
   ],
   run: (v) => {
     const s = velocita({ limite: LIMITI[v.l], rilevata: v.v });
-    if (!s.infrazione) return { head: [T(l, 'Nessuna multa', 'No fine'), soldi(0, l)], rows: [[T(l, 'Velocità accertata', 'Speed held'), kmh(s.accertata, l)]], note: T(l, 'Dopo la riduzione del 5 % la velocità resta entro il limite.', 'After the 5% reduction the speed stays within the limit.') };
+    if (!s.infrazione) return { head: [T(l, 'Nessuna multa', 'No fine'), soldi(0, l)], rows: [[T(l, 'Velocità accertata', 'Speed held'), kmh(s.accertata, l)]], note: T(l, 'Dopo la riduzione del 5% la velocità resta entro il limite.', 'After the 5% reduction the speed stays within the limit.') };
     return {
-      head: s.ridotto !== null ? [T(l, 'Entro 5 giorni (−30 %)', 'Within 5 days (−30%)'), soldi(s.ridotto, l)] : [T(l, 'Entro 60 giorni', 'Within 60 days'), soldi(s.minimo, l)],
+      head: s.ridotto !== null ? [T(l, 'Entro 5 giorni (−30%)', 'Within 5 days (−30%)'), soldi(s.ridotto, l)] : [T(l, 'Entro 60 giorni', 'Within 60 days'), soldi(s.minimo, l)],
       rows: [
         [T(l, 'Velocità accertata', 'Speed held'), kmh(s.accertata, l)],
         [T(l, 'Importo entro 60 giorni', 'Amount within 60 days'), soldi(s.minimo, l)],

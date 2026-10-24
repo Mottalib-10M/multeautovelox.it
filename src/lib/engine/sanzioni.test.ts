@@ -7,11 +7,11 @@ describe('riduzione (art. 345 DPR 495/1992)', () => {
     expect(riduzione(p, 60)).toBe(5);
     expect(riduzione(p, 100)).toBe(5);
   });
-  it('5 % oltre i 100 km/h', () => {
+  it('5% oltre i 100 km/h', () => {
     expect(riduzione(p, 140)).toBe(7);
     expect(riduzione(p, 157)).toBe(7.85);
   });
-  it('pedaggi : 5, 10, 15 %', () => {
+  it('pedaggi : 5, 10, 15%', () => {
     expect(riduzione(p, 60, 'pedaggio')).toBe(3);
     expect(riduzione(p, 100, 'pedaggio')).toBe(10);
     expect(riduzione(p, 150, 'pedaggio')).toBe(22.5);
@@ -22,7 +22,7 @@ describe('art. 142 : fasce, importi, punti', () => {
   it('nessuna infrazione dentro la tolleranza (55 su limite 50)', () => {
     expect(calcolaVelocita(p, { limite: 50, rilevata: 55 }).infrazione).toBe(false);
   });
-  it('comma 7 : 42-173 €, 0 punti, sconto 30 %', () => {
+  it('comma 7 : 42-173 €, 0 punti, sconto 30%', () => {
     const r = calcolaVelocita(p, { limite: 50, rilevata: 62 });
     expect(r.accertata).toBe(57);
     expect(r.band?.id).toBe('c7');
