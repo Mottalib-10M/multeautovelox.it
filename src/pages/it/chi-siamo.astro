@@ -9,11 +9,11 @@ import S from '../../data/velox/stats.json';
 const lang = 'it';
 const reg = S.meta.catturato_il.slice(0, 10);
 ---
-<PageLayout title="Multe e Autovelox, chi siamo: chi calcola le multe italiane" description="Chi pubblica Multe e Autovelox, perché un calcolatore neutrale delle multe stradali, da dove vengono importi e registro autovelox, come segnalare un errore." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Chi siamo', path: route('about', lang) }])]} breadcrumbs={[{ label: 'Chi siamo' }]}>
-  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Chi pubblica Multe e Autovelox</h1></header>
+<PageLayout title="Multe Autovelox, chi siamo: chi calcola le multe italiane" description="Chi pubblica Multe Autovelox, perché un calcolatore neutrale delle multe stradali, da dove vengono importi e registro autovelox, come segnalare un errore." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Chi siamo', path: route('about', lang) }])]} breadcrumbs={[{ label: 'Chi siamo' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Chi pubblica Multe Autovelox</h1></header>
   <div class="prose prose-slate max-w-none">
     <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
-    <p>Multe e Autovelox è pubblicato da Radif Partners. Risponde alle domande di chi trova un verbale nella cassetta della posta: quanto pago, entro quando, quanti punti perdo, e l’autovelox era dichiarato?</p>
+    <p>Multe Autovelox è pubblicato da Radif Partners. Risponde alle domande di chi trova un verbale nella cassetta della posta: quanto pago, entro quando, quanti punti perdo, e l’autovelox era dichiarato?</p>
     <h2>Perché questo sito</h2>
     <p>Su queste domande si trovano soprattutto articoli che ripetono le regole senza fare il conto, e siti che vendono ricorsi o consulenze, con una tabella da leggere da soli. La tolleranza viene spesso dimenticata, la maggiorazione notturna omessa, la data dell’elenco degli autovelox mai indicata. Questo sito applica i testi al tuo caso: la velocità accertata dopo la riduzione del 5 %, la fascia dell’articolo 142, l’importo entro 5 e 60 giorni, i punti e la sospensione, e i {formatNumber(S.italia.totale, 0, 'it')} apparecchi del registro del Ministero per comune, con la data della copia letta.</p>
     <h2>Da dove vengono i numeri</h2>

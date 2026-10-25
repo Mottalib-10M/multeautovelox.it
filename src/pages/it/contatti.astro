@@ -5,7 +5,7 @@ import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data
 import { route } from '../../i18n/routes';
 const lang = 'it';
 ---
-<PageLayout title={`Contatti – ${SITE_NAMES[lang]}`} description="Scrivi all’editore di Multe e Autovelox: segnala un importo o un punteggio sbagliato, un autovelox dismesso, una domanda sul metodo, o inserisci il calcolatore." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contatti' }]} showAuthor={false}>
+<PageLayout title={`Contatti – ${SITE_NAMES[lang]}`} description="Scrivi all’editore di Multe Autovelox: segnala un importo o un punteggio sbagliato, un autovelox dismesso, una domanda sul metodo, o inserisci il calcolatore." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contatti' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none">
     <h1>Contatti</h1>
     <p>Un solo indirizzo, letto ogni settimana: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Non c’è una linea telefonica e non richiamiamo nessuno: questo sito non vende nulla.</p>
@@ -17,6 +17,6 @@ const lang = 'it';
     <p>Autoscuole, associazioni, testate locali: il calcolatore delle multe si inserisce gratis con un iframe. Il codice è nella pagina <a href={route('widget', lang)}>Inserisci il calcolatore</a>.</p>
     <h2>Editore</h2>
     <LegalIdentity lang={lang} />
-    <p>{AUTHOR_NAME} è responsabile dei contenuti di Multe e Autovelox; i dati completi sono nelle <a href={route('terms', lang)}>note legali</a>. Pagina rivista il {LAST_UPDATED}.</p>
+    <p>{AUTHOR_NAME} è responsabile dei contenuti di Multe Autovelox; i dati completi sono nelle <a href={route('terms', lang)}>note legali</a>. Pagina rivista il {LAST_UPDATED}.</p>
   </div>
 </PageLayout>

@@ -19,7 +19,7 @@ import { displayDate } from '../../lib/format';
   </head>
   <body class="bg-white p-2 text-navy-900">
     <VelocitaTool client:load lang="it" id="embed" />
-    <p class="mt-2 text-center text-xs text-navy-600"><a href={`${SITE_URL}/it/`} target="_blank" rel="noopener" class="underline">Multe e Autovelox</a> · Codice della Strada, testi riletti il {displayDate(P.retrieved_at, 'it-IT')}</p>
+    <p class="mt-2 text-center text-xs text-navy-600"><a href={`${SITE_URL}/it/`} target="_blank" rel="noopener" class="underline">Multe Autovelox</a> · Codice della Strada, testi riletti il {displayDate(P.retrieved_at, 'it-IT')}</p>
     <div class="mt-1 text-center text-xs text-navy-600 [&_a]:underline"><Fragment set:html={licenzeHtml('it')} /></div>
   </body>
 </html>

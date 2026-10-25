@@ -1,6 +1,8 @@
 /** Configuration centrale du site (générée par new-site.py). */
 export const SITE_URL = "https://multeautovelox.it";
-export const SITE_NAMES: Record<string, string> = {"it": "Multe e Autovelox", "en": "Multe e Autovelox"};
+// Partie du nom en couleur dans l'en-tete ('' = aucune).
+export const BRAND_ACCENT = 'Autovelox';
+export const SITE_NAMES: Record<string, string> = {"it": "Multe Autovelox", "en": "Multe Autovelox"};
 export const LANG_TAGS: Record<string, string> = {"it": "it-IT", "en": "en-IT"};
 export const OG_LOCALES: Record<string, string> = {"it": "it_IT", "en": "en_GB"};
 export const LOCALE_TAG = 'it-IT';

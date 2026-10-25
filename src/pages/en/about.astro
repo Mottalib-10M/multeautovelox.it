@@ -9,11 +9,11 @@ import S from '../../data/velox/stats.json';
 const lang = 'en';
 const reg = S.meta.catturato_il.slice(0, 10);
 ---
-<PageLayout title="Multe e Autovelox, about us: who works out Italian fines" description="Who publishes Multe e Autovelox, why a neutral calculator of Italian traffic fines, where the amounts and camera register come from, how to report an error." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
-  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">About Multe e Autovelox</h1></header>
+<PageLayout title="Multe Autovelox, about us: who works out Italian fines" description="Who publishes Multe Autovelox, why a neutral calculator of Italian traffic fines, where the amounts and camera register come from, how to report an error." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">About Multe Autovelox</h1></header>
   <div class="prose prose-slate max-w-none">
     <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
-    <p>Multe e Autovelox is published by Radif Partners. It answers the questions raised by an Italian fine (a verbale) in the post or at the rental desk: how much do I pay, by when, how many points do I lose, and was the camera declared?</p>
+    <p>Multe Autovelox is published by Radif Partners. It answers the questions raised by an Italian fine (a verbale) in the post or at the rental desk: how much do I pay, by when, how many points do I lose, and was the camera declared?</p>
     <h2>Why this site exists</h2>
     <p>On those questions you mostly find news articles that repeat the rules without doing the sum, and sites that sell appeals or legal services, with a table to read for yourself. The tolerance is often forgotten, the night surcharge left out, and the date of the camera list never given. This site applies the texts to your case: the speed held after the 5% reduction, the article 142 band, the amount within 5 and 60 days, the points and the suspension, and the {formatNumber(S.italia.totale, 0, 'en')} devices of the ministry’s register by comune, with the date of the copy read.</p>
     <h2>Where the figures come from</h2>
