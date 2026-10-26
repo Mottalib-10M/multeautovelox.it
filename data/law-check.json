@@ -1,7 +1,8 @@
 {
-  "checked_at": "2026-10-24",
+  "checked_at": "2026-10-26",
   "vigore": {
     "7": "25-4-2026",
+    "117": "14-12-2024",
     "142": "14-12-2024",
     "146": "15-1-2021",
     "158": "25-4-2026",
@@ -19,7 +20,7 @@
     "dlgs150art7": "6-10-2011",
     "tabella": "12-4-2025"
   },
-  "total": 36,
+  "total": 43,
   "failed": [],
   "results": [
     {
@@ -94,6 +95,13 @@
     },
     {
       "where": "params.speeding.same_hour_same_body",
+      "article": "142",
+      "verify": "in un periodo di tempo non superiore a un'ora, si applicano, se più favorevoli, le sanzioni amministrative previste per la violazione più grave aumentate di un terzo",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.speeding.plurime_un_ora",
       "article": "142",
       "verify": "in un periodo di tempo non superiore a un'ora, si applicano, se più favorevoli, le sanzioni amministrative previste per la violazione più grave aumentate di un terzo",
       "vigore": "14-12-2024",
@@ -236,6 +244,48 @@
       "where": "params.other_violations[8]",
       "article": "176",
       "verify": "è soggetto alla sanzione amministrativa del pagamento di una somma da € 430 a € 1.731",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[9]",
+      "article": "158",
+      "verify": "da euro 87 a euro 328 per i ciclomotori e i motoveicoli a due ruote e da euro 165 a euro 660 per i restanti veicoli",
+      "vigore": "25-4-2026",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[10]",
+      "article": "158",
+      "verify": "da euro 165 a euro 660 per i ciclomotori e i motoveicoli a due ruote e da euro 330 a euro 990 per i restanti veicoli",
+      "vigore": "25-4-2026",
+      "ok": true
+    },
+    {
+      "where": "params.other_violations[11]",
+      "article": "158",
+      "verify": "da € 25 a € 100 per i ciclomotori e i motoveicoli a due ruote e da € 42 a € 173 per i restanti veicoli",
+      "vigore": "25-4-2026",
+      "ok": true
+    },
+    {
+      "where": "params.limits",
+      "article": "142",
+      "verify": "la velocità massima non può superare i 130 km/h per le autostrade, i 110 km/h per le strade extraurbane principali, i 90 km/h per le strade extraurbane secondarie e per le strade extraurbane locali, ed i 50 km/h per le strade nei centri abitati",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.limits.pioggia",
+      "article": "142",
+      "verify": "la velocità massima non può superare i 110 km/h per le autostrade ed i 90 km/h per le strade extraurbane principali",
+      "vigore": "14-12-2024",
+      "ok": true
+    },
+    {
+      "where": "params.limits.neopatentati",
+      "article": "117",
+      "verify": "non è consentito il superamento della velocità di 100 km/h per le autostrade e di 90 km/h per le strade extraurbane principali",
       "vigore": "14-12-2024",
       "ok": true
     },
